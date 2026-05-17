@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="page" class="site" style="overflow-x: hidden;">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner ">
+                    <div class="header__top">
+                        <a class="logo" href="index.html">
+                            <img src="./assets/images/logo/logo.svg" alt="Логотип">
+                        </a>
+
+                        <nav aria-label="Основная навигация" class="desktop-nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                                <li class="nav__item"><a class="nav__link" href="company.html">О компании</a></li>
+                                <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                                <li class="nav__item"><a class="nav__link" href="cases.html">кейсы</a></li>
+                                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="header__right">
+                            <div class="header__right_icon flex_row">
+                                <a href="https://t.me/Ontape_Ads" target="_blank" class="icon-btn"
+                                    aria-label="Telegram">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="#2793FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.5 18.9307C15.4558 16.7595 18.7603 15.3282 20.4138 14.6366C25.1348 12.6621 26.1157 12.3191 26.7551 12.3078C26.8958 12.3053 27.2102 12.3404 27.4139 12.5065C27.5858 12.6469 27.6332 12.8364 27.6558 12.9695C27.6784 13.1025 27.7066 13.4056 27.6842 13.6424C27.4284 16.3454 26.3214 22.9048 25.7583 25.9321C25.52 27.2131 25.0507 27.6426 24.5965 27.6847C23.6093 27.776 22.8597 27.0286 21.9035 26.3984C20.4073 25.4122 19.5621 24.7982 18.1098 23.8359C16.4314 22.7237 17.5194 22.1124 18.4759 21.1134C18.7262 20.852 23.0759 16.8737 23.16 16.5128C23.1706 16.4677 23.1803 16.2994 23.081 16.2106C22.9816 16.1218 22.8348 16.1521 22.729 16.1763C22.5789 16.2105 20.1887 17.7991 15.5585 20.9421C14.88 21.4105 14.2655 21.6388 13.7149 21.6268C13.108 21.6136 11.9404 21.2817 11.0724 20.998C10.0078 20.65 9.16169 20.4661 9.23537 19.8751C9.27374 19.5673 9.6953 19.2524 10.5 18.9307Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                            <a href="" class="header__right_btn main--btn js-open-modal">Заказать консультацию</a>
+
+                            <button class="burger-btn" id="burgerBtn" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu" id="mobileMenu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                            <li class="nav__item"><a class="nav__link" href="company.html">О компании</a></li>
+                            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                            <li class="nav__item"><a class="nav__link" href="cases.html">кейсы</a></li>
+                            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                        </ul>
+
+                        <div class="header__right mobile-only-right"
+                            style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="" class="header__right_btn main--btn js-open-modal">Заказать консультацию</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="primary" class="site-main">
+            <!-- banner_main -->
+            <section class="banner_main" style="background: linear-gradient(289.57deg, #2793FF 9.44%, #3268FE 87.96%);">
+                <div class="banner_main__content container">
+                    <div class="title-sub">
+                        <h1>Агентство диджитал-маркетинга</h1>
+                        <span class="banner-span"
+                            data-texts="коттеджных поселков|строительных компаний|девелоперов в сфере ИЖС">
+                            коттеджных поселков
+                        </span>
+                    </div>
+                    <div class="banner_main__btn flex_row js-open-modal">
+                        <a href="">Заказать консультацию</a>
+                        <svg width="18" height="18" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.02079 18.5555L16.5381 11.0382L9.02079 3.52081M16.5381 11.0382H0.751709"
+                                stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="banner_img">
+                    <img src="./assets/images/banner/banner1.png" alt="">
+                </div>
+            </section>
+
+            <!-- text_block__v1 -->
+            <section class="section text_block__v1 container top_mar_44">
+                <div class="text_block__v1--cards flex_column">
+                    <div class="text_block__v1--content gap_16 grid-3">
+                        <div class="card span-2">
+                            <img class="abs-cover" src="./assets/images/company/company.png"
+                                alt="Теплые дома для жизни">
+                            <div class="text_block__v1__card_content">
+                                <p>Онтейп АДС — комплексное
+                                    продвижение в самых
+                                    конкурентных сферах</p>
+                                <a href="company.html">Подробнее о компании</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v1--card card">
+                            <p class="text_block__v1_subtitle">Миссия компании</p>
+                            <h3 class="text_block__v1_title">Делаем <span class="card_cpan">лидеров
+                                    отрасли</span> заметнее
+                            </h3>
+                            <p class="text_block__v1_text">Увеличиваем прибыль и узнаваемость
+                                строительных компаний за счёт
+                                богатого digital- и отраслевого опыта</p>
+                        </div>
+                    </div>
+                    <div class="text_block__v1--content gap_16 grid-3">
+                        <div class="text_block__v1--card card">
+                            <p class="text_block__v1_subtitle">Подход к проектам</p>
+                            <h3 class="text_block__v1_title">Работаем только
+                                <span class="card_cpan">в&nbsp;определенных нишах</span>
+                            </h3>
+                            <p class="text_block__v1_text">Выбираем проекты только в тех отраслях,
+                                в которых являемся экспертами
+                                и гарантируем высокую эффективность</p>
+                        </div>
+                        <div class="card span-2 card_v2">
+                            <img class="abs-cover" src="./assets/images/company/company2.png"
+                                alt="Теплые дома для жизни">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- text_block__v2 -->
+            <section class="section text_block__v2 container top_mar">
+                <div class="text_block__v2-title flex_row">
+                    <h2 class="title">Услуги компании</h2>
+                    <div class="text_block__v2_filters flex_row">
+                        <a href="#" class="filter_tab active">Продвижение</a>
+                        <a href="#" class="filter_tab">Стратегии</a>
+                        <a href="#" class="filter_tab">Аутстафф</a>
+                    </div>
+                </div>
+                <div class="text_block__v2__cards active">
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column type-light"
+                                    style="background-color: #FFF;">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services1.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/direct.svg" alt="">
+                                            <p>Яндекс Директ</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p>Яндекс.Директ</p>
+                                                <p>Поисковая реклама</p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p>PPC</p>
+                                                <p>Ретаргетинг</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(207, 229, 255, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services2.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/seo.svg" alt="">
+                                            <p>SEO-продвижение</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Позиционирование
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Айдентика</p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Коммуникация</p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Упаковка продукта
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(29, 32, 35, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services3.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/smm.svg" alt="">
+                                            <p style="color: #FFF;">SMM-продвижение</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Community
+                                                    Management
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Статейный
+                                                    маркетинг
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">UGC</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.5);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style=" background-color: rgba(91, 101, 111, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services4.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/advertising.svg" alt="">
+                                            <p style="color: #FFF;">Медийная реклама</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Баннерные
+                                                    кампании
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Рост узнаваемости
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Гео-реклама</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text_block__v2__cards">
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column type-light"
+                                    style="background-color: #FFF;">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services1.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/bluelogo.svg" alt="">
+                                            <p>Digital-стратегии</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p>Построение воронки</p>
+                                                <p>Тестирование и рост</p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p>Анализ ЦА</p>
+                                                <p>Выбор каналов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(207, 229, 255, 1);">
+                                    <div class="card-bg-image" style="mix-blend-mode: multiply;">
+                                        <img src="./assets/images/services/services2.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/advertising.svg" alt="">
+                                            <p>Бренд-упаковка</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Коммуникация</p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Упаковка продукта
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Позиционирование
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Айдентика</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(29, 32, 35, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services3.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/bluelogo.svg" alt="">
+                                            <p style="color: #FFF;">Разработка УТП</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Анализ рынка
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Выявление
+                                                    ценностей
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Формирование УТП
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.5);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style=" background-color: rgba(91, 101, 111, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services5.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/advertising.svg" alt="">
+                                            <p style="color: #FFF;">Контент-маркетинг</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Копирайтинг
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Экспертные
+                                                    материалы</p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">SEO-контент</p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Развитие блога
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text_block__v2__cards">
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column type-light"
+                                    style="background-color: #FFF;">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services1.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/bluelogo.svg" alt="">
+                                            <p>Аутстафф-маркетинг</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p>Интеграция в команду</p>
+                                                <p>Развитие каналов</p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p>Аналитика и рост</p>
+                                                <p>Управление маркетингом</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(207, 229, 255, 1);">
+                                    <div class="card-bg-image" style="mix-blend-mode: multiply;">
+                                        <img src="./assets/images/services/services2.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/advertising.svg" alt="">
+                                            <p>Медиапланирование</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Расчёт охвата</p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Подбор площадок
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Оптимизация
+                                                    бюджета</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v2--content grid-2">
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style="background-color: rgba(29, 32, 35, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services3.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/bluelogo.svg" alt="">
+                                            <p style="color: #FFF;">Разработка сайта</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Разработка
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Интеграции и
+                                                    запуск
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">UX/UI
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.5);">Конверсия</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.5);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                        <div class="text_block__v2_cards">
+                            <div class="services_card flex_column">
+                                <div class="services_card__content card flex_column"
+                                    style=" background-color: rgba(91, 101, 111, 1);">
+                                    <div class="card-bg-image">
+                                        <img src="./assets/images/services/services5.png" alt="">
+                                    </div>
+                                    <div class="services_card__top">
+                                        <div class="services_card__logo flex_row">
+                                            <img src="assets/images/services/advertising.svg" alt="">
+                                            <p style="color: #FFF;">Сквозная аналитика</p>
+                                        </div>
+                                        <div class="services_card__cheaps flex_column">
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Сбор данных
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Контроль бюджета
+                                                </p>
+                                            </div>
+                                            <div class="services_card__cheap flex_row">
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">Анализ каналов
+                                                </p>
+                                                <p style="background-color: rgba(255, 255, 255, 0.6);">ROI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services_card__bottom flex_column pad_16"
+                                        style="background-color: rgba(255, 255, 255, 0.6);">
+                                        <h3>Об услуге</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+                                            accumsan, risus sem </p>
+                                    </div>
+                                </div>
+                                <a href="" class="main--btn services_card__btn">Отправить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v3 container top_mar">
+                <div class="text_block__v3-title flex_row">
+                    <h2 class="title">Наши кейсы</h2>
+                    <a href="" class="btn light--btn text_block__v3__btn">Все кейсы</a>
+                </div>
+                <div class="text_block__v3--content flex_column">
+                    <div class="text_block__v3_cards grid-2">
+                        <div class="text_block__v3_card card">
+                            <div class="text_block__v3_card_content"
+                                style="background-image: url(./assets/images/cases/case1.png); border-radius: 24px;">
+                                <div class="text_block__v3_top flex_row">
+                                    <p>Директ</p>
+                                    <p>SEO</p>
+                                    <p>Медийная реклама</p>
+                                    <p>SMM</p>
+                                    <p>Копирайтинг</p>
+                                </div>
+                                <div class="text_block__v3_bottom flex_column">
+                                    <h3>Строй Хауз</h3>
+                                    <p>Более 4 лет комплексно сопровождаем рекламные кампании,
+                                        SEO и коммуникации на основе единой стратегии развития</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_block__v3_card card">
+                            <div class="text_block__v3_card_content"
+                                style="background-image: url(./assets/images/cases/case2.png); border-radius: 24px;">
+                                <div class="text_block__v3_top flex_row">
+                                    <p>Директ</p>
+                                    <p>SEO</p>
+                                    <p>Аутстафф-маркетинг</p>
+                                    <p>Контент-маркетинг</p>
+                                </div>
+                                <div class="text_block__v3_bottom flex_column">
+                                    <h3>Идея Хаус</h3>
+                                    <p>Маркетинг полного цикла: стратегия продвижения в digital,
+                                        коммуникационную модель и лидогенерация для проекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_block__v3_card card">
+                            <div class="text_block__v3_card_content"
+                                style="background-image: url(./assets/images/cases/case3.png); border-radius: 24px;">
+                                <div class="text_block__v3_top flex_row">
+                                    <p>Директ</p>
+                                    <p>SEO</p>
+                                    <p>Медийная реклама</p>
+                                    <p>Бренд-упаковка</p>
+                                </div>
+                                <div class="text_block__v3_bottom flex_column">
+                                    <h3>Резиденции Истра</h3>
+                                    <p>Проработали для девелопера комплексное позиционирование:
+                                        от УТП и коммуникации до сайта и эффективной лидогенерации</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_block__v3_card card">
+                            <div class="text_block__v3_card_content"
+                                style="background-image: url(./assets/images/cases/case4.png); border-radius: 24px;">
+                                <div class="text_block__v3_top flex_row">
+                                    <p>Аутстафф-маркетинг</p>
+                                    <p>Бренд-упаковка</p>
+                                    <p>Разработка УТП</p>
+                                </div>
+                                <div class="text_block__v3_bottom flex_column">
+                                    <h3>box for life</h3>
+                                    <p>Комплексно ведем проект от этапа проработки продукта и УТП до
+                                        сформированного бренда и работающего digital-маркетинга</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn light--btn text_block__v3_cards__btn">Загрузить ещё</a>
+                </div>
+            </section>
+
+            <div class="container top_mar">
+                <section class="section text_block__v4 card">
+                    <div class="text_block__v4--wrapper">
+
+                        <div class="text_block__v4--left flex_row">
+                            <div class="text_block__v4--title">
+                                <h2>Оставьте заявку<br>на&nbsp;<span class="form-span">бесплатный
+                                        аудит</span><br>digital-маркетинга</h2>
+                                <p>Проведем аудит рекламы и сайтов, выявим
+                                    точки роста и конкретно подскажем,
+                                    как улучшить результат</p>
+
+                                <label class="form_checkbox">
+                                    <input class="form_checkbox__input" type="checkbox" name="agreement" required>
+                                    <span class="form-checkbox__text">Я согласен(а) на обработку <a
+                                            class="uderline-span" href="policy.html">персональных&nbsp;данных</a></span>
+                                </label>
+                            </div>
+
+                            <form action="#" class="text_block__v4--form form_section">
+                                <div class="form_section__fields">
+                                    <div class="form_group">
+                                        <label for="name" class="form_label">Ваше имя</label>
+                                        <input type="text" class="form_input" name="name" placeholder="Имя Фамилия"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="tel" class="form_label">Номер телефона</label>
+                                        <input type="tel" class="form_input" name="tel" placeholder="+7 (___) ___-__-__"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="email" class="form_label">Электронная почта</label>
+                                        <input type="email" class="form_input" name="email"
+                                            placeholder="example@yandex.ru" required>
+                                    </div>
+                                    <button class="form_section__btn light-blue--btn">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="form-bg-image" style="background-image: url('./assets/images/form/form1.png');">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <section class="section text_block__v5 container top_mar">
+                <h2 class="title">Принципы работы</h2>
+                <div class="text_block__v5--content flex_column">
+                    <div class="text_block__v5--content_top grid-3">
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Профи узкого
+                                    профиля</h3>
+                                <p>Берёмся только за те проекты,
+                                    где досконально знаем рынок и можем
+                                    показать качественный результат</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Подбор
+                                    проектов</h3>
+                                <p>Тщательно выбираем контрагентов,
+                                    нацеленных на результат
+                                    и долгосрочное сотрудничество.</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Сделки,
+                                    а не лиды</h3>
+                                <p>Наша цель — это не красивые цифры
+                                    в отчётах, а качественное повышение
+                                    ваших продаж</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v5--content_top grid-2">
+                        <div class="text_block__v5_card_v2 card flex_row">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Тестирование
+                                    и масштабирование</h3>
+                                <p>Проверяем новые гипотезы
+                                    и масштабируем эффективные
+                                    инструменты для вашей отрасли</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img style="left: 0;" src="./assets/images/principles/principes4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card_v2 card flex_row">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Индивидуальный
+                                    подход к проектам</h3>
+                                <p>Ограничиваем загрузку
+                                    экспертов — максимум качества
+                                    и фокуса на вашем проекте</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v6 track_wh  top_mar">
+                <div class="title_content gap_10 container">
+                    <h2 class="title">Наши партнеры</h2>
+                </div>
+                <div class="partners_content container">
+                    <div class="partners_slider partners_slider--forward swiper ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner18.svg" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner1.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner22.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner3.png" class="track_wh__logo" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner4.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner5.png" alt="" class="track_wh__logo">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner6.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner7.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners_slider partners_slider--reverse swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner10.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner11.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner12.png" class="track_wh__logo" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner13.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner14.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner15.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner17.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section text_block__v7 faq-mobile-accordion container top_pad" id="faq">
+                <h2 class="title">Отвечаем на популярные вопросы</h2>
+                <div class="text_block__v7--conetnt">
+                    <div class="questions_block__tabs">
+                        <div class="questions_tab first_tab">
+                            <p>В каких сферах вы работаете?</p>
+                        </div>
+                        <div class="questions_tab">
+                            <p>Какие услуги входят в ваше сопровождение?</p>
+                        </div>
+                        <div class="questions_tab">
+                            <p>Сколько времени занимает строительство дома?</p>
+                        </div>
+                        <div class="questions_tab">
+                            <p>Когда видны первые результаты?</p>
+                        </div>
+                        <div class="questions_tab">
+                            <p>Можно заказать только одну услугу, например, Яндекс Директ? </p>
+                        </div>
+                        <div class="questions_tab">
+                            <p>Как происходит отчётность по проекту?</p>
+                        </div>
+                    </div>
+                    <div class="questions_block__right">
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question_content flex_column">
+                            <div class="questions_title">
+                                <h3 class="questions_title_title">Какие услуги входят в ваше сопровождение?</h3>
+                                <p class="questions_text">Мы предоставляем полный комплекс digital-услуг: разработка и
+                                    реализация коммуникационной стратегии, бренд-упаковка
+                                    и позиционирование, создание и продвижение сайтов, SEO-
+                                    оптимизация, настройка и ведение Яндекс Директ,
+                                    таргетированная и медийная реклама.
+
+                                    Структура услуг индивидуальна для каждого бизнеса, а фокус
+                                    на построении системы, приносящей реальную прибыль.
+                                </p>
+                            </div>
+                            <div class="questions_block__right--bottom">
+                                <p>Остались вопросы? Получите бесплатную
+                                    консультацию для более развернутых ответов</p>
+                                <a href="tel:+79326043100">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.75" y="0.75" width="36.5" height="36.5" rx="18.25" stroke="#595959"
+                                            stroke-width="1.5" />
+                                        <path
+                                            d="M17.1846 15.692C17.7233 15.1331 17.7276 14.455 17.1872 13.9004C16.5285 13.2241 15.8551 12.5608 15.1878 11.8932C15.028 11.735 14.8411 11.6124 14.623 11.5507C14.1425 11.4124 13.7376 11.5663 13.3927 11.9001C13.0121 12.2669 12.6567 12.6616 12.2649 13.0154C11.7244 13.5074 11.475 14.1082 11.502 14.7358C11.502 15.3921 11.6088 15.9711 11.8269 16.6161C12.403 18.3165 13.3153 19.8203 14.4492 21.2009C16.1505 23.2681 18.2133 24.8615 20.6819 25.9168C21.4535 26.2463 22.2564 26.4645 23.1018 26.4975C23.7466 26.5219 24.3383 26.3706 24.8127 25.9081C25.2506 25.4804 25.6799 25.0423 26.1074 24.6042C26.3098 24.3947 26.4523 24.1504 26.4897 23.854C26.5453 23.4219 26.3715 23.0751 26.0778 22.7795C25.6173 22.3144 25.1524 21.8537 24.6876 21.3912C24.4521 21.1574 24.2271 20.9105 23.9734 20.701C23.4859 20.2985 22.8942 20.3115 22.4094 20.7166C22.3155 20.7949 22.2312 20.8809 22.1443 20.9678C21.7907 21.3216 21.4388 21.6755 21.0852 22.0293C21.0139 22.1005 20.9427 22.1649 20.8341 22.1049C20.516 21.9336 20.1867 21.7824 19.8844 21.5885C18.7096 20.8366 17.7356 19.8638 16.8701 18.7754C16.5034 18.3146 16.1828 17.8226 15.9421 17.2819C15.8378 17.0463 15.8396 17.0368 16.0203 16.8568C16.4096 16.47 16.8032 16.0849 17.1855 15.6911L17.1846 15.692Z"
+                                            fill="#595959" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container top_mar">
+                <section class="section text_block__v4 card">
+                    <div class="text_block__v4--wrapper">
+
+                        <div class="text_block__v4--left flex_row">
+                            <div class="text_block__v4--title">
+                                <div class="text_block__v4--title_content">
+                                    <h2 class="text_block__v4--title_v2">Оставьте заявку<br>
+                                        на&nbsp;<span class="form-span">консультацию</span> с нами</h2>
+                                    <p>Обсудим ваши задачи, ответим на имеющиеся вопросы и поможем расставить приоритеты
+                                    </p>
+
+                                    <label class="form_checkbox">
+                                        <input class="form_checkbox__input" type="checkbox" name="agreement" required>
+                                        <span class="form-checkbox__text">Я согласен(а) на обработку <a
+                                                class="uderline-span"
+                                                href="policy.html">персональных&nbsp;данных</a></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <form action="#" class="text_block__v4--form form_section">
+                                <div class="form_section__fields">
+                                    <div class="form_group">
+                                        <label for="name" class="form_label">Ваше имя</label>
+                                        <input type="text" class="form_input" name="name" placeholder="Имя Фамилия"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="tel" class="form_label">Номер телефона</label>
+                                        <input type="tel" class="form_input" name="tel" placeholder="+7 (___) ___-__-__"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="email" class="form_label">Электронная почта</label>
+                                        <input type="email" class="form_input" name="email"
+                                            placeholder="example@yandex.ru" required>
+                                    </div>
+                                    <button class="form_section__btn light-blue--btn">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="form-bg-image" style="background-image: url('./assets/images/form/form2.png');">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class="footer__inner container top_mar grid-2">
+                    <div class="footer_left flex_column">
+                        <div class="logo">
+                            <img src="./assets/images/logo/logo.svg" alt="">
+                        </div>
+                        <div class="footer_policy flex_column">
+                            <a href="policy.html">Политика
+                                конфиденциальности</a>
+                            <div class="footer_policy__right">
+                                <p>© ООО «ОНТЕЙП»</p>
+                                <p>Все права защищены</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_right grid-4">
+                        <div class="footer_block1 flex_column">
+                            <h3>Услуги</h3>
+                            <a href="services.html">Все услуги</a>
+                            <a href="services.html#promotion">Продвижение</a>
+                            <a href="services.html#strategies">Стратегии</a>
+                            <a href="services.html#outstaff">Аутстафф</a>
+                        </div>
+                        <div class="footer_block2 flex_column">
+                            <h3>Карта сайта</h3>
+                            <a href="services.html">Главная</a>
+                            <a href="company.html">О компании</a>
+                            <a href="services.html">Услуги</a>
+                            <a href="cases.html">Кейсы</a>
+                            <a href="contacts.html">Контакты</a>
+                        </div>
+                        <div class="footer_block3 flex_column">
+                            <h3>Другие проекты</h3>
+                            <a href="https://ontape-production.ru">Онтейп Продакшн</a>
+                            <a href="https://ontape-design.ru">Онтейп Дизайн</a>
+                        </div>
+                        <div class="footer_block4 flex_column">
+                            <h3>Контакты</h3>
+                            <div class="footer_block4__group flex_column">
+                                <p>Время работы</p>
+                                <h4>Пн-Вс
+                                    10:00 - 20:00</h4>
+                            </div>
+                            <div class="footer_block4__group flex_column">
+                                <p>Почта</p>
+                                <a href="mailto:ontape-ads@yandex.ru">ontape-ads@yandex.ru</a>
+                            </div>
+                            <div class="footer_block4__group flex_column">
+                                <p>Telegram</p>
+                                <a href="https://t.me/Ontape_Ads">@Ontape_Ads</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="close-popup" id="popupModal">
+                <div class="close-popup__form flex_column">
+                    <h2>Оставить заявку</h2>
+                    <div class="close-popup__form_clos" id="closePopupBtn"></div>
+                    <form action="">
+                        <div class="input-group">
+                            <label for="">Ваше имя</label>
+                            <input type="text" name="" id="" placeholder="Иванов Иван">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Телефон для связи</label>
+                            <input type="text" name="" id="" placeholder="+7 (927) 000-00-00">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Электронная почта</label>
+                            <input type="text" name="" id="" placeholder="example@ya.ru">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="popup_checkbox_wrapper">
+                            <label class="fpopup_checkbox">
+                                <input class="popup_checkbox__input" type="checkbox" name="agreement" id="" required>
+                                <span class="popup-checkbox__text">Я согласен(а) на обработку
+                                    <a class="uderline-span" href="policy.html">персональных данных</a></span>
+                            </label>
+                        </div>
+                        <button type="submit">Оставить заявку</button>
+                        <p class="close-popup__policy">Нажимая кнопку Вы соглашаетесь с правилами и <a
+                                href="policy.html">Политикой конфиденциальности
+                                ресурса.</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup-confirmed">
+                <div class="popup-confirmed--content">
+                    <h2>Заявка отправлена!</h2>
+                    <p>Наши специалисты свяжутся с вами в ближайшее время по номеру <br>
+                        +7 (927) 000-00-00</p>
+                </div>
+                <div class="popup-confirmed__icon">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8182 1.50008L6.39545 16.5001L1.5 10.8751" stroke="#68B2FF" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="cookie-modal container" id="cookieModal">
+                <div class="cookie-modal__content">
+                    <button class="cookie-modal__close" aria-label="Закрыть"><svg width="12" height="12"
+                            viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 13L1 1M13 1L1 13" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <h3 class="cookie-modal__title">Файлы Cookie</h3>
+                    <div class="cookie__agree">
+                        <p class="cookie-modal__text">
+                            Наш сайт использует куки.<br>
+                            Продолжая им пользоваться, вы&nbsp;соглашаетесь на обработку
+                            персональных данных в соответствии с <a href="policy.html"
+                                class="cookie-modal__link">политикой конфиденциальности.</a>
+                        </p>
+                        <button class="cookie-modal__btn js-cookie-accept">Согласен(а)</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

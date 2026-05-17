@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="page" class="site" style=" overflow-x: hidden;">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner ">
+                    <div class="header__top">
+                        <a class="logo" href="index.html">
+                            <img src="./assets/images/logo/logo.svg" alt="Логотип">
+                        </a>
+
+                        <nav aria-label="Основная навигация" class="desktop-nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                                <li class="nav__item"><a class="nav__link" href="company.html">О компании</a></li>
+                                <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                                <li class="nav__item"><a class="nav__link" href="cases.html">кейсы</a></li>
+                                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="header__right">
+                            <div class="header__right_icon flex_row">
+                                <a href="https://t.me/Ontape_Ads" target="_blank" class="icon-btn"
+                                    aria-label="Telegram">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="20" fill="#2793FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.5 18.9307C15.4558 16.7595 18.7603 15.3282 20.4138 14.6366C25.1348 12.6621 26.1157 12.3191 26.7551 12.3078C26.8958 12.3053 27.2102 12.3404 27.4139 12.5065C27.5858 12.6469 27.6332 12.8364 27.6558 12.9695C27.6784 13.1025 27.7066 13.4056 27.6842 13.6424C27.4284 16.3454 26.3214 22.9048 25.7583 25.9321C25.52 27.2131 25.0507 27.6426 24.5965 27.6847C23.6093 27.776 22.8597 27.0286 21.9035 26.3984C20.4073 25.4122 19.5621 24.7982 18.1098 23.8359C16.4314 22.7237 17.5194 22.1124 18.4759 21.1134C18.7262 20.852 23.0759 16.8737 23.16 16.5128C23.1706 16.4677 23.1803 16.2994 23.081 16.2106C22.9816 16.1218 22.8348 16.1521 22.729 16.1763C22.5789 16.2105 20.1887 17.7991 15.5585 20.9421C14.88 21.4105 14.2655 21.6388 13.7149 21.6268C13.108 21.6136 11.9404 21.2817 11.0724 20.998C10.0078 20.65 9.16169 20.4661 9.23537 19.8751C9.27374 19.5673 9.6953 19.2524 10.5 18.9307Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                            <a href="" class="header__right_btn main--btn js-open-modal">Заказать консультацию</a>
+
+                            <button class="burger-btn" id="burgerBtn" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu" id="mobileMenu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                            <li class="nav__item"><a class="nav__link" href="company.html">О компании</a></li>
+                            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                            <li class="nav__item"><a class="nav__link" href="cases.html">кейсы</a></li>
+                            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                        </ul>
+
+                        <div class="header__right mobile-only-right"
+                            style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="" class="header__right_btn main--btn js-open-modal">Заказать консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="primary" class="site-main">
+            <!-- banner_main -->
+            <section class="banner_main banner_main--company" style="background: linear-gradient(93.69deg, #2793FF 1.76%, #8EC6FF 98.43%);">
+                <div class="banner_main__content container">
+                    <div class="title-sub">
+                        <h1>О компании
+                        </h1>
+                        <span class="banner-span"
+                            style="padding: 0px 25px 15px 25px; -webkit-backdrop-filter: blur(20px);color: rgba(255, 255, 255, 1); background-color:rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); ">кто
+                            мы и
+                            как работаем</span>
+                    </div>
+                </div>
+                <div class="banner_img">
+                    <img src="./assets/images/banner/banner2.png" alt="">
+                </div>
+            </section>
+
+            <section class="section text_block__v10 container top_mar_44">
+                <h2 class="title">О компании</h2>
+                <div class="text_block__v10--content flex_column">
+                    <div class="text_block__v10_about flex_row">
+                        <div class="text_block_v10_card card flex_column">
+                            <h2>Что такое <span class="card_cpan">Онтейп АДС?</span></h2>
+                            <p>Наша команда — больше, чем просто рекламное агентство.
+                                Мы строим работу по принципу «от стратегии к результату»:
+                                анализируем рынок и конкурентов, создаём индивидуальные
+                                решения и ведем проект на всех этапах продвижения.
+                                <br><br>
+                                Каждый проект для нас — не просто задача, а возможность
+                                сделать ваш бренд ярким, заметным и востребованным.</p>
+                        </div>
+                        <div class="text_block__v10_img card">
+                            <img src="./assets/images/company/about.png" alt="">
+                        </div>
+                    </div>
+                    <div class="text_block__v10_adventages grid-4">
+                        <div class="text_block__v10_adv_card card flex_column">
+                            <h3>15+ проектов</h3>
+                            <p>Из сферы ИЖС прямо сейчас
+                                находится на сопровождении</p>
+                        </div>
+                        <div class="text_block__v10_adv_card card flex_column">
+                            <h3>3 года</h3>
+                            <p>Продвигаем коттеджные
+                                поселки, строительные
+                                компании и девелоперов</p>
+                        </div>
+                        <div class="text_block__v10_adv_card card flex_column">
+                            <h3>25+ экспертов</h3>
+                            <p>В команде агентства — штатные
+                                специалисты, аккредитованные
+                                подрядчики и партнёры</p>
+                        </div>
+                        <div class="text_block__v10_adv_card card flex_column">
+                            <h3>от 5 дней</h3>
+                            <p>Для погружения команды
+                                в проект и подготовки аудита</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v8 container top_mar">
+                <h2 class="title">Направления работы</h2>
+                <div class="text_block__v8--content grid-3">
+                    <div class="text_block__v8_card card flex_row">
+                        <div class="company_card__left flex_column">
+                            <div class="company_card__logo">
+                                <img src="./assets/images/logo/онтейпайдс.svg" alt="" style="max-width: 147px;">
+                                <p class="compny_card__title">Студия цифрового маркетинга</p>
+                            </div>
+                            <div class="company_card__content">
+                                <p class="company_card__text">Настройка и запуск рекламы в&nbsp;Яндекс
+                                    Директ, SEO-продвижение сайтов</p>
+                                <a href="" target="_blank"
+                                    class="company_card--btn js-open-modal light--btn ads--btn"
+                                    style="background-color: rgba(39, 147, 255, 1)">Запустить рекламу</a>
+                            </div>
+                        </div>
+                        <div class="company_card__right flex_column">
+                            <div class="company_card__adv flex_column">
+                                <h4>3&#8239;<span class="comp-span">года</span></h4>
+                                <p>на рынке</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>40+</h3>
+                                <p>проектов</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>25+</h3>
+                                <p>сотрудников</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v8_card card flex_row">
+                        <div class="company_card__left flex_column">
+                            <div class="company_card__logo">
+                                <img src="./assets/images/logo/design.svg" alt="" style="max-width: 246px;">
+                                <p class="compny_card__title">Дизайн-студия полного цикла</p>
+                            </div>
+                            <div class="company_card__content">
+                                <p class="company_card__text">Разработка и редизайн сайтов,
+                                    формирование цифрового пространства
+                                    для бизнеса</p>
+                                <a href="https://ontape-design.ru" class="company_card--btn light--btn design--btn"
+                                    style="background-color: rgba(239, 83, 69, 1);">Заказать сайт</a>
+                            </div>
+                        </div>
+                        <div class="company_card__right flex_column">
+                            <div class="company_card__adv flex_column">
+                                <h4>5&#8239;<span class="comp-span">лет</span></h4>
+                                <p>на рынке</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>100+</h3>
+                                <p>проектов</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>20+</h3>
+                                <p>сотрудников</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v8_card card flex_row">
+                        <div class="company_card__left flex_column">
+                            <div class="company_card__logo">
+                                <img src="./assets/images/logo/онтейпродакшен.svg" alt="" style="max-width: 185px;">
+                                <p class="compny_card__title">Видеопродакшн для бизнеса</p>
+                            </div>
+                            <div class="company_card__content">
+                                <p class="company_card__text">Съемка видеоконтента, усиливающего
+                                    маркетинговую стратегию бренда
+                                    в диджитал</p>
+                                <a href="https://ontape-production.ru" target="_blank"
+                                    class="company_card--btn light--btn prodaction--btn"
+                                    style="background-color: rgba(45, 217, 169, 1);">Заказать видеоролик</a>
+                            </div>
+                        </div>
+                        <div class="company_card__right flex_column">
+                            <div class="company_card__adv flex_column">
+                                <h4>10&#8239;<span class="comp-span">лет</span></h4>
+                                <p>на рынке</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>250+</h3>
+                                <p>проектов</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>15+</h3>
+                                <p>сотрудников</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text_block__v8_card card flex_row">
+                        <div class="company_card__left flex_column">
+                            <div class="company_card__logo">
+                                <img src="./assets/images/logo/кит.svg" alt="" style="max-width: 184px;">
+                                <p class="compny_card__title">IT-продукт для бизнеса</p>
+                            </div>
+                            <div class="company_card__content">
+                                <p class="company_card__text">Универсальный набор цифровых
+                                    инструментов для&nbsp;быстрого запуска сайтa</p>
+                                <a href="#" class="company_card--btn light--btn js-open-modal2 kit--btn"
+                                    style="background-color: rgba(72, 66, 198, 1);">Запросить КП</a>
+                            </div>
+                        </div>
+                        <div class="company_card__right flex_column">
+                            <div class="company_card__adv flex_column">
+                                <h4>1&#8239;<span class="comp-span">год</span></h4>
+                                <p>на рынке</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>5+</h3>
+                                <p>проектов</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>5+</h3>
+                                <p>сотрудников</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v8_card card flex_row">
+                        <div class="company_card__left flex_column">
+                            <div class="company_card__logo">
+                                <img src="./assets/images/logo/эстейт.svg" alt="">
+                                <p class="compny_card__title">Маркетинг и управление в ИЖС</p>
+                            </div>
+                            <div class="company_card__content">
+                                <p class="company_card__text">Полный цикл сопровождения коттеджных
+                                    поселков: от запуска до финальных
+                                    продаж</p>
+                                <a href="javascript:void(0);" class="company_card--btn light--btn"
+                                    style="background-color: rgba(239, 239, 239, 1); color: rgba(58, 58, 58, 0.2);">Скоро
+                                    запуск</a>
+                            </div>
+                        </div>
+                        <div class="company_card__right flex_column">
+                            <div class="company_card__adv flex_column">
+                                <h4>1&#8239;<span class="comp-span">год</span></h4>
+                                <p>на рынке</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>5+</h3>
+                                <p>проектов</p>
+                            </div>
+                            <div class="company_card__adv flex_column">
+                                <h3>10+</h3>
+                                <p>сотрудников</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text_block__v8--card card flex_column">
+                        <div class="text_block__v8_top">
+                            <p class="text_block__v8_subtitle">Сотрудничество с нами</p>
+                            <h3 class="text_block__v8_title">Станьте <span class="card_cpan">партнером</span>
+                                команды ONTAPE
+                            </h3>
+                        </div>
+                        <div class="text_bottom__v8_bottom flex_column">
+                            <p class="text_block__v8_text">Присоединяйтесь к нашей команде,
+                                чтобы вместе создавать качественные
+                                IT-продукты</p>
+                            <a href="#" class="text_block__v8--btn dark--btn js-open-modal">Стать партнером</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v5 container top_mar">
+                <h2 class="title">Принципы работы</h2>
+                <div class="text_block__v5--content flex_column">
+                    <div class="text_block__v5--content_top grid-3">
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Профи узкого профиля</h3>
+                                <p>Берёмся только за те проекты,
+                                    где досконально знаем рынок и можем
+                                    показать качественный результат</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Подбор 
+                                    проектов</h3>
+                                <p>Тщательно выбираем контрагентов,
+                                    нацеленных на результат
+                                    и долгосрочное сотрудничество.</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card card flex_column">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Сделки, 
+                                    а не лиды</h3>
+                                <p>Наша цель — это не красивые цифры
+                                    в отчётах, а качественное повышение
+                                    ваших продаж</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_block__v5--content_top grid-2">
+                        <div class="text_block__v5_card_v2 card flex_row">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Тестирование
+                                    и масштабирование</h3>
+                                <p>Проверяем новые гипотезы
+                                    и масштабируем эффективные
+                                    инструменты для вашей отрасли</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img style="left: 0;" src="./assets/images/principles/principes4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text_block__v5_card_v2 card flex_row">
+                            <div class="text_block__v5_card__content flex_column">
+                                <h3>Индивидуальный
+                                    подход к проектам</h3>
+                                <p>Ограничиваем загрузку
+                                    экспертов — максимум качества
+                                    и фокуса на вашем проекте</p>
+                            </div>
+                            <div class="text_block__v5_card__img card">
+                                <img src="./assets/images/principles/principes5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v6 track_wh  top_mar">
+                <div class="title_content gap_10 container">
+                    <h2 class="title">Наши партнеры</h2>
+                </div>
+                <div class="partners_content container">
+                    <div class="partners_slider partners_slider--forward swiper ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner18.svg" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner1.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner22.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner3.png" class="track_wh__logo" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner4.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner5.png" alt="" class="track_wh__logo">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner6.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner7.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners_slider partners_slider--reverse swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner10.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner11.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner12.png" class="track_wh__logo" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner13.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner14.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner15.png" alt="">
+                            </div>
+                            <div class="swiper-slide partners_slide">
+                                <img src="./assets/images/logo/partner17.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v11 container top_mar">
+                <h2 class="title">Этапы работы</h2>
+                <div class="text_block__v11--content grid-3">
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Анализ и погружение</h3>
+                            <p>Изучаем бизнес, воронку и задачи клиента.
+                                Проводим интервью, изучаем ЦА, анализируем
+                                конкурентов и текущие зоны роста</p>
+                        </div>
+                        <span class="stages_span">01</span>
+                    </div>
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Диагностика и аудит</h3>
+                            <p>Детально оцениваем сайт, маркетинг, продукт
+                                и воронку. Формируем объективную картину:
+                                где потери, что усилить, что сохранить</p>
+                        </div>
+                        <span class="stages_span">02</span>
+                    </div>
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Формирование стратегии</h3>
+                            <p>На основе аудита создаём медиаплан.
+                                Согласовываем, что необходимо внедрить,
+                                какие этапы в приоритете, и какой бюджет</p>
+                        </div>
+                        <span class="stages_span">03</span>
+                    </div>
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Сбор и подготовка данных</h3>
+                            <p>Настраиваем необходимые интеграции,
+                                аналитику и трекинг. Подбираем инструменты
+                                под задачи и особенности бизнеса</p>
+                        </div>
+                        <span class="stages_span">04</span>
+                    </div>
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Запуск и оптимизация</h3>
+                            <p>Внедряем решения пошагово, тестируем
+                                каналы и гипотезы. Регулярно оптимизируем
+                                действия для максимизации эффективности.</p>
+                        </div>
+                        <span class="stages_span">05</span>
+                    </div>
+                    <div class="text_block__v11_card card flex_column">
+                        <div class="text_block__v11_card__content flex_column">
+                            <h3>Отчеты и масштабирование</h3>
+                            <p>Прозрачно показываем, что работает,
+                                что требует доработки и как можно усилить.
+                                Масштабируем только успешные гипотезы.</p>
+                        </div>
+                        <span class="stages_span">06</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text_block__v9 container top_mar" id="vacancy">
+                <h2 class="title">Вакансии</h2>
+                <div class="text_block__v9--content grid-3">
+                    <div class="vacancy--card card flex_column">
+                        <h3>Digital-стратег</h3>
+                        <p class="experiance">Middle • Опыт от 5 лет</p>
+                        <p class="vacancy__description">Разработка digital-стратегий для девелопмента: анализ,
+                            коммуникации, медиапланирование и презентация решений</p>
+                        <p class="vacancy__skills_title">Ключевые навыки</p>
+                        <div class="vacacy__skills">
+                            <div class="vacacy__skill flex_row">
+                                <p>Медиапланирование</p>
+                                <p>Стратегия</p>
+                            </div>
+                            <div class="vacacy__skill flex_row">
+                                <p>Битрикс24</p>
+                                <p>Аналитика</p>
+                                <p>Презентации</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="vacancy--btn dark--btn js-open-modalVacancy">Откликнуться</a>
+                    </div>
+                    <div class="vacancy--card card flex_column">
+                        <h3>PPC-специалист</h3>
+                        <p class="experiance">Middle • Опыт от 3 лет</p>
+                        <p class="vacancy__description">Ведение и оптимизация рекламных кампаний, работа с бюджетами и
+                            креативами, подготовка ежемесячной отчётности</p>
+                        <p class="vacancy__skills_title">Ключевые навыки</p>
+                        <div class="vacacy__skills">
+                            <div class="vacacy__skill flex_row">
+                                <p>Яндекс.Директ</p>
+                                <p>VK Ads</p>
+                            </div>
+                            <div class="vacacy__skill flex_row">
+                                <p>Битрикс24</p>
+                                <p>Оптимизация</p>
+                                <p>БитрикАналитикас24</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="vacancy--btn dark--btn js-open-modalVacancy">Откликнуться</a>
+                    </div>
+                    <div class="vacancy--card card flex_column">
+                        <h3>Веб-аналитик</h3>
+                        <p class="experiance">Junior+ • Опыт от 2 лет</p>
+                        <p class="vacancy__description">Настройка сквозной аналитики, создание отчётов по лидам и
+                            продажам, дашборды и визуализация данных.</p>
+                        <p class="vacancy__skills_title">Ключевые навыки</p>
+                        <div class="vacacy__skills">
+                            <div class="vacacy__skill flex_row">
+                                <p>Визуализация</p>
+                                <p>1С-Битрикс</p>
+                            </div>
+                            <div class="vacacy__skill flex_row">
+                                <p>Битрикс24</p>
+                                <p>Отчеты</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="vacancy--btn dark--btn js-open-modalVacancy">Откликнуться</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container top_mar">
+                <section class="section text_block__v4 card">
+                    <div class="text_block__v4--wrapper">
+                        <div class="text_block__v4--left flex_row">
+                            <div class="text_block__v4--title">
+                                <div class="text_block__v4--title_content">
+                                    <h2 class="text_block__v4--title_v2">Оставьте заявку<br>
+                                        на&nbsp;<span class="form-span">консультацию</span> с нами</h2>
+                                    <p>Обсудим ваши задачи, ответим на имеющиеся вопросы и поможем расставить приоритеты
+                                    </p>
+
+                                    <label class="form_checkbox">
+                                        <input class="form_checkbox__input" type="checkbox" name="agreement" required>
+                                        <span class="form-checkbox__text">Я согласен(а) на обработку <a
+                                                class="uderline-span"
+                                                href="policy.html">персональных&nbsp;данных</a></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <form action="#" class="text_block__v4--form form_section">
+                                <div class="form_section__fields">
+                                    <div class="form_group">
+                                        <label for="name" class="form_label">Ваше имя</label>
+                                        <input type="text" class="form_input" name="name" placeholder="Имя Фамилия"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="tel" class="form_label">Номер телефона</label>
+                                        <input type="tel" class="form_input" name="tel" placeholder="+7 (___) ___-__-__"
+                                            required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="email" class="form_label">Электронная почта</label>
+                                        <input type="email" class="form_input" name="email"
+                                            placeholder="example@yandex.ru" required>
+                                    </div>
+                                    <button class="form_section__btn light-blue--btn">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="form-bg-image" style="background-image: url('./assets/images/form/form2.png');">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class="footer__inner container top_mar grid-2">
+                    <div class="footer_left flex_column">
+                        <div class="logo">
+                            <img src="./assets/images/logo/logo.svg" alt="">
+                        </div>
+                        <div class="footer_policy flex_column">
+                            <a href="policy.html">Политика
+                                конфиденциальности</a>
+                            <div class="footer_policy__right">
+                                <p>© ООО «ОНТЕЙП»</p>
+                                <p>Все права защищены</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_right grid-4">
+                        <div class="footer_block1 flex_column">
+                            <h3>Услуги</h3>
+                            <a href="services.html">Все услуги</a>
+                            <a href="services.html#promotion">Продвижение</a>
+                            <a href="services.html#strategies">Стратегии</a>
+                            <a href="services.html#outstaff">Аутстафф</a>
+                        </div>
+                        <div class="footer_block2 flex_column">
+                            <h3>Карта сайта</h3>
+                            <a href="services.html">Главная</a>
+                            <a href="company.html">О компании</a>
+                            <a href="services.html">Услуги</a>
+                            <a href="cases.html">Кейсы</a>
+                            <a href="contacts.html">Контакты</a>
+                        </div>
+                        <div class="footer_block3 flex_column">
+                            <h3>Другие проекты</h3>
+                            <a href="https://ontape-production.ru">Онтейп Продакшн</a>
+                            <a href="https://ontape-design.ru">Онтейп Дизайн</a>
+                        </div>
+                        <div class="footer_block4 flex_column">
+                            <h3>Контакты</h3>
+                            <div class="footer_block4__group flex_column">
+                                <p>Время работы</p>
+                                <h4>Пн-Вс
+                                    10:00 - 20:00</h4>
+                            </div>
+                            <div class="footer_block4__group flex_column">
+                                <p>Почта</p>
+                                <a href="mailto:ontape-ads@yandex.ru">ontape-ads@yandex.ru</a>
+                            </div>
+                            <div class="footer_block4__group flex_column">
+                                <p>Telegram</p>
+                                <a href="https://t.me/Ontape_Ads">@Ontape_Ads</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="close-popup" id="popupModal">
+                <div class="close-popup__form flex_column">
+                    <h2>Оставить заявку</h2>
+                    <div class="close-popup__form_clos" id="closePopupBtn"></div>
+                    <form action="">
+                        <div class="input-group">
+                            <label for="">Ваше имя</label>
+                            <input type="text" name="" id="" placeholder="Иванов Иван">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Телефон для связи</label>
+                            <input type="text" name="" id="" placeholder="+7 (927) 000-00-00">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Электронная почта</label>
+                            <input type="text" name="" id="" placeholder="example@ya.ru">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="popup_checkbox_wrapper">
+                            <label class="fpopup_checkbox">
+                                <input class="popup_checkbox__input" type="checkbox" name="agreement" id="" required>
+                                <span class="popup-checkbox__text">Я согласен(а) на обработку
+                                    <a class="uderline-span" href="policy.html">персональных данных</a></span>
+                            </label>
+                        </div>
+                        <button type="submit">Оставить заявку</button>
+                        <p class="close-popup__policy">Нажимая кнопку Вы соглашаетесь с правилами и <a
+                                href="policy.html">Политикой конфиденциальности
+                                ресурса.</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup-confirmed">
+                <div class="popup-confirmed--content">
+                    <h2>Заявка отправлена!</h2>
+                    <p>Наши специалисты свяжутся с вами в ближайшее время по номеру <br>
+                        +7 (927) 000-00-00</p>
+                </div>
+                <div class="popup-confirmed__icon">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8182 1.50008L6.39545 16.5001L1.5 10.8751" stroke="#68B2FF" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="close-popupVacancy" id="vacancyModal">
+                <div class="close-popup__form flex_column">
+                    <h2>Работа в Ontape:
+                        *наименование вакансии*</h2>
+                    <div class="close-popup__form_clos" id="closeVacancyBtn"></div>
+                    <form action="">
+                        <div class="input-group">
+                            <label for="">Ваше имя</label>
+                            <input type="text" name="" id="" placeholder="Иванов Иван">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Телефон для связи</label>
+                            <input type="text" name="" id="" placeholder="+7 (927) 000-00-00">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Электронная почта</label>
+                            <input type="text" name="" id="" placeholder="example@ya.ru">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="popup_checkbox_wrapper">
+                            <label class="fpopup_checkbox">
+                                <input class="popup_checkbox__input" type="checkbox" name="agreement" id="" required>
+                                <span class="popup-checkbox__text">Я согласен(а) на обработку
+                                    <a class="uderline-span" href="policy.html">персональных данных</a></span>
+                            </label>
+                        </div>
+                        <button type="submit">Откликнуться</button>
+                        <p class="close-popup__policy">Нажимая кнопку Вы соглашаетесь с правилами и <a
+                                href="policy.html">Политикой конфиденциальности
+                                ресурса.</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="close-popupKit" id="popupModalKit">
+                <div class="close-popup__form flex_column">
+                    <h2>Запросить КП</h2>
+                    <div class="close-popup__form_clos" id="closePopupBtnKit"></div>
+                    <form action="">
+                        <div class="input-group">
+                            <label for="">Ваше имя</label>
+                            <input type="text" name="" id="" placeholder="Иванов Иван">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Телефон для связи</label>
+                            <input type="text" name="" id="" placeholder="+7 (927) 000-00-00">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Электронная почта</label>
+                            <input type="text" name="" id="" placeholder="example@ya.ru">
+                            <div class="input-error">Заполните это поле</div>
+                        </div>
+                        <div class="popup_checkbox_wrapper">
+                            <label class="fpopup_checkbox">
+                                <input class="popup_checkbox__input" type="checkbox" name="agreement" id="" required>
+                                <span class="popup-checkbox__text">Я согласен(а) на обработку
+                                    <a class="uderline-span" href="policy.html">персональных данных</a></span>
+                            </label>
+                        </div>
+                        <button type="submit">Запросить КП</button>
+                        <p class="close-popup__policy">Нажимая кнопку Вы соглашаетесь с правилами и <a
+                                href="policy.html">Политикой конфиденциальности
+                                ресурса.</a></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
