@@ -94,13 +94,101 @@ mix-blend-mode: luminosity;">
             <section class="section text_block__v2 container top_mar">
                 <div class="text_block__v2-title flex_row">
                     <h2 class="title">Услуги компании</h2>
-                    <div class="text_block__v2_filters flex_row">
-                        <a href="" class="filter_tab active">Все услуги</a>
-                        <a href="" class="filter_tab">Продвижение</a>
-                        <a href="" class="filter_tab">Стратегии</a>
-                        <a href="" class="filter_tab">Аутстафф</a>
+                    <div class="text_block__v2_filters services_f flex_row">
+                        <a href="#" class="filter_tab active" data-filter="all">Все услуги</a>
+                        <a href="#" class="filter_tab" data-filter="promotion">Продвижение</a>
+                        <a href="#" class="filter_tab" data-filter="strategies">Стратегии</a>
+                        <a href="#" class="filter_tab" data-filter="outstaff">Аутстафф</a>
+                    </div>
+
+                    <div class="mobile-filter-bar">
+                        <button class="mobile-filter-active" id="mobileFilterActive">Все услуги</button>
+                        <button class="mobile-filter-toggle" id="mobileFilterToggle">
+                            Фильтр
+                            <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1395_3736)">
+                                    <path d="M9.85721 10.5879L13.2858 14.1173L16.7144 10.5879" stroke="black"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M1.28564 2.64752H9.85707M13.2856 14.1181V0.882812V14.1181ZM1.28564 11.471H5.57136H1.28564ZM1.28564 7.05928H7.28564H1.28564Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1395_3736">
+                                        <rect width="18" height="15" fill="white" transform="matrix(-1 0 0 1 18 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
+
+                <div class="filter-sheet" id="filterSheet">
+                    <div class="filter-sheet__overlay" id="filterSheetOverlay"></div>
+                    <div class="filter-sheet__panel">
+                        <div class="filter-sheet__header">
+                            <span class="filter-sheet__title">Фильтр</span>
+                            <button class="filter-sheet__close" id="filterSheetClose">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 13L1 1M13 1L1 13" stroke="black" stroke-opacity="0.5" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="filter-sheet__body">
+                            <label class="filter-sheet__option">
+                                <input type="radio" name="mobile-filter" value="all" checked>
+                                <span class="filter-sheet__name">Все услуги</span>
+                                <span class="filter-sheet__check">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1L5.2 14L1 9.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </label>
+                            <label class="filter-sheet__option">
+                                <input type="radio" name="mobile-filter" value="promotion">
+                                <span class="filter-sheet__name">Продвижение</span>
+                                <span class="filter-sheet__check">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1L5.2 14L1 9.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </label>
+                            <label class="filter-sheet__option">
+                                <input type="radio" name="mobile-filter" value="strategies">
+                                <span class="filter-sheet__name">Стратегии</span>
+                                <span class="filter-sheet__check">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1L5.2 14L1 9.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </label>
+                            <label class="filter-sheet__option">
+                                <input type="radio" name="mobile-filter" value="outstaff">
+                                <span class="filter-sheet__name">Аутстафф</span>
+                                <span class="filter-sheet__check">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 1L5.2 14L1 9.125" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="text_block__v2__cards active">
                     <div class="text_block__v2--content grid-2">
                         <div class="text_block__v2_cards">
@@ -128,9 +216,8 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Настройка рекламного кабинета, ведение и оптимизация рекламных кампаний в
+                                            Яндекс Директ для быстрого привлечения клиентов и роста продаж </p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -164,9 +251,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Продвижение сайта в поисковых системах: техническая оптимизация, работа с
+                                            контентом и внешними ссылками для увеличения органического трафика</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -203,9 +289,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Продвижение бизнеса в социальных сетях: оформление профилей, запуск
+                                            таргетированной рекламы и построение лояльного сообщества вокруг бренда</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -239,9 +324,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Запуск баннерной и видеорекламы в Яндекс.Директ для увеличения узнаваемости
+                                            бренда и привлечения новой аудитории через широкий охват</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -274,9 +358,8 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Построение коммуникационной и маркетинговой стратегии в digital, определение
+                                            ЦА, анализ рынка и конкурентов, формулировка ключевого сообщения</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -310,9 +393,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Создание единого визуального и смыслового образа компании: разработка
+                                            фирменного стиля, дизайн носителей и формирование коммуникаций</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -349,9 +431,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Построение уникального торгового предложения: формирование преимуществ и
+                                            выгод, способных выделить бренд на рынке и привлечь к нему внимание</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -386,9 +467,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Разработка стратегий контент-маркетинга, создание полезных статей, новостных
+                                            публикаций и их размещение для вовлечения и удержания ЦА</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -421,9 +501,9 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Обеспечение проектной поддержки бизнеса за счет привлечения внешних
+                                            специалистов по маркетингу,
+                                            без необходимости расширять внутреннюю команду</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -456,9 +536,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Анализ целевой аудитории, выбор оптимальных рекламных каналов и форматов,
+                                            составление медиаплана и контроль выполнения задач</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -496,9 +575,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Прототипирование, разработка и запуск сайтов любого уровня сложности с
+                                            акцентом на функциональность, удобство и визуальную привлекательность</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -533,9 +611,9 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Внедрение аналитики для отслеживания эффективности всех рекламных каналов,
+                                            построения полной картины продвижения и принятия решений на основе данных
+                                        </p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -570,9 +648,8 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Настройка рекламного кабинета, ведение и оптимизация рекламных кампаний в
+                                            Яндекс Директ для быстрого привлечения клиентов и роста продаж </p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -606,9 +683,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Продвижение сайта в поисковых системах: техническая оптимизация, работа с
+                                            контентом и внешними ссылками для увеличения органического трафика</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -645,9 +721,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Продвижение бизнеса в социальных сетях: оформление профилей, запуск
+                                            таргетированной рекламы и построение лояльного сообщества вокруг бренда</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -681,9 +756,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Запуск баннерной и видеорекламы в Яндекс.Директ для увеличения узнаваемости
+                                            бренда и привлечения новой аудитории через широкий охват</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -719,9 +793,8 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Построение коммуникационной и маркетинговой стратегии в digital, определение
+                                            ЦА, анализ рынка и конкурентов, формулировка ключевого сообщения</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -755,9 +828,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Создание единого визуального и смыслового образа компании: разработка
+                                            фирменного стиля, дизайн носителей и формирование коммуникаций</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -794,9 +866,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Построение уникального торгового предложения: формирование преимуществ и
+                                            выгод, способных выделить бренд на рынке и привлечь к нему внимание</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -831,9 +902,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Разработка стратегий контент-маркетинга, создание полезных статей, новостных
+                                            публикаций и их размещение для вовлечения и удержания ЦА</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -869,9 +939,9 @@ mix-blend-mode: luminosity;">
                                     </div>
                                     <div class="services_card__bottom flex_column pad_16">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Обеспечение проектной поддержки бизнеса за счет привлечения внешних
+                                            специалистов по маркетингу,
+                                            без необходимости расширять внутреннюю команду</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -904,9 +974,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Анализ целевой аудитории, выбор оптимальных рекламных каналов и форматов,
+                                            составление медиаплана и контроль выполнения задач</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -944,9 +1013,8 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.5);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Прототипирование, разработка и запуск сайтов любого уровня сложности с
+                                            акцентом на функциональность, удобство и визуальную привлекательность</p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -981,9 +1049,9 @@ mix-blend-mode: luminosity;">
                                     <div class="services_card__bottom flex_column pad_16"
                                         style="background-color: rgba(255, 255, 255, 0.6);">
                                         <h3>Об услуге</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                            molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
-                                            accumsan, risus sem </p>
+                                        <p>Внедрение аналитики для отслеживания эффективности всех рекламных каналов,
+                                            построения полной картины продвижения и принятия решений на основе данных
+                                        </p>
                                     </div>
                                 </div>
                                 <a href="" class="main--btn services_card__btn js-open-modal">Отправить заявку</a>
@@ -996,22 +1064,21 @@ mix-blend-mode: luminosity;">
             <div class="container top_mar">
                 <section class="section text_block__v4 card">
                     <div class="text_block__v4--wrapper">
+                        <h2 class="text_block__v4--title_v2">
+                            Оставьте заявку<br>
+                            на&nbsp;<span class="form-span">консультацию</span> с нами
+                        </h2>
 
                         <div class="text_block__v4--left flex_row">
                             <div class="text_block__v4--title">
-                                <div class="text_block__v4--title_content">
-                                    <h2 class="text_block__v4--title_v2">Оставьте заявку<br>
-                                        на&nbsp;<span class="form-span">консультацию</span> с нами</h2>
-                                    <p>Обсудим ваши задачи, ответим на имеющиеся вопросы и поможем расставить приоритеты
-                                    </p>
+                                <p>Обсудим ваши задачи, ответим на имеющиеся вопросы и поможем расставить приоритеты</p>
 
-                                    <label class="form_checkbox">
-                                        <input class="form_checkbox__input" type="checkbox" name="agreement" required>
-                                        <span class="form-checkbox__text">Я согласен(а) на обработку <a
-                                                class="uderline-span"
-                                                href="policy.html">персональных&nbsp;данных</a></span>
-                                    </label>
-                                </div>
+                                <label class="form_checkbox">
+                                    <input class="form_checkbox__input" type="checkbox" name="agreement" required>
+                                    <span class="form-checkbox__text">Я согласен(а) на обработку
+                                        <a class="uderline-span" href="policy.html">персональных данных</a>
+                                    </span>
+                                </label>
                             </div>
 
                             <form action="#" class="text_block__v4--form form_section">
@@ -1031,13 +1098,13 @@ mix-blend-mode: luminosity;">
                                         <input type="email" class="form_input" name="email"
                                             placeholder="example@yandex.ru" required>
                                     </div>
-                                    <button class="form_section__btn light-blue--btn">Оставить заявку</button>
+                                    <button class="form_section__btn main--btn">Оставить заявку</button>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="form-bg-image" style="background-image: url('./assets/images/form/form2.png');">
-                        </div>
+                        <div class="form-bg-image form2"
+                            style="background-image: url('./assets/images/form/form2.png');"></div>
 
                     </div>
                 </section>
@@ -1073,10 +1140,24 @@ mix-blend-mode: luminosity;">
                             <a href="cases.html">Кейсы</a>
                             <a href="contacts.html">Контакты</a>
                         </div>
-                        <div class="footer_block3 flex_column">
+                       <div class="footer_block3 flex_column">
                             <h3>Другие проекты</h3>
-                            <a href="https://ontape-production.ru">Онтейп Продакшн</a>
-                            <a href="https://ontape-design.ru">Онтейп Дизайн</a>
+                            <div class="footer_block3__btn flex_row">
+                                <a href="https://ontape-production.ru">Онтейп Продакшн</a>
+                                <svg width="9" height="9" viewBox="0 0 11 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.530334 11L9.53033 2M1.53033 2H9.53033V10" stroke="#C9C9C9"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="footer_block3__btn flex_row">
+                                <a href="https://ontape-design.ru">Онтейп Дизайн</a>
+                                <svg width="9" height="9" viewBox="0 0 11 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.530334 11L9.53033 2M1.53033 2H9.53033V10" stroke="#C9C9C9"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="footer_block4 flex_column">
                             <h3>Контакты</h3>
@@ -1104,17 +1185,17 @@ mix-blend-mode: luminosity;">
                     <form action="">
                         <div class="input-group">
                             <label for="">Ваше имя</label>
-                            <input type="text" name="" id="" placeholder="Иванов Иван">
+                            <input type="text" name="" id="" placeholder="Имя Фамилия">
                             <div class="input-error">Заполните это поле</div>
                         </div>
                         <div class="input-group">
                             <label for="">Телефон для связи</label>
-                            <input type="text" name="" id="" placeholder="+7 (927) 000-00-00">
+                            <input type="text" name="" id="" placeholder="+7 (___) ___-__-__">
                             <div class="input-error">Заполните это поле</div>
                         </div>
                         <div class="input-group">
                             <label for="">Электронная почта</label>
-                            <input type="text" name="" id="" placeholder="example@ya.ru">
+                            <input type="text" name="" id="" placeholder="example@yandex.ru">
                             <div class="input-error">Заполните это поле</div>
                         </div>
                         <div class="popup_checkbox_wrapper">
@@ -1136,7 +1217,7 @@ mix-blend-mode: luminosity;">
                 <div class="popup-confirmed--content">
                     <h2>Заявка отправлена!</h2>
                     <p>Наши специалисты свяжутся с вами в ближайшее время по номеру <br>
-                        +7 (927) 000-00-00</p>
+                        +7 (___) ___-__-__</p>
                 </div>
                 <div class="popup-confirmed__icon">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">

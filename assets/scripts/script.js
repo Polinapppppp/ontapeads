@@ -308,24 +308,51 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    const casesBtn = document.querySelector('.text_block__v3__btn');
+    if (casesBtn) {
+        const desktopText = 'Посмотреть все кейсы';
+        const mobileText = 'Все кейсы';
+        const MOBILE_BREAKPOINT = 768;
+
+        function updateCasesBtnText() {
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                casesBtn.textContent = mobileText;
+            } else {
+                casesBtn.textContent = desktopText;
+            }
+        }
+
+        window.addEventListener('resize', updateCasesBtnText);
+        updateCasesBtnText();
+    }
+
     const bannerSpan = document.querySelector('.banner-span[data-texts]');
     if (bannerSpan) {
         const texts = bannerSpan.dataset.texts.split('|');
         let currentIndex = 0;
         let intervalId = null;
-        const MOBILE_BREAKPOINT = 769;
+        const MOBILE_BREAKPOINT = 768;
+
+        const innerSpan = document.createElement('span');
+        innerSpan.style.display = 'inline-block';
+        innerSpan.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        innerSpan.textContent = texts[0];
+        bannerSpan.innerHTML = '';
+        bannerSpan.appendChild(innerSpan);
 
         function startRotator() {
-            if (window.innerWidth <= MOBILE_BREAKPOINT) return;
 
             intervalId = setInterval(() => {
                 currentIndex = (currentIndex + 1) % texts.length;
 
-                bannerSpan.classList.add('changing');
+                innerSpan.style.opacity = '0';
+                innerSpan.style.transform = 'translateY(10px)';
 
                 setTimeout(() => {
-                    bannerSpan.textContent = texts[currentIndex];
-                    bannerSpan.classList.remove('changing');
+                    innerSpan.textContent = texts[currentIndex];
+                    innerSpan.style.opacity = '1';
+                    innerSpan.style.transform = 'translateY(0)';
                 }, 400);
             }, 2500);
         }
@@ -338,50 +365,116 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function handleResize() {
-            if (window.innerWidth <= MOBILE_BREAKPOINT) {
-                stopRotator();
-                const allTexts = texts.slice(); 
-                const last = allTexts.pop();
-                const mobileText = 'Для ' + allTexts.join(', ') + ' и ' + last;
-                bannerSpan.textContent = mobileText;
-                bannerSpan.classList.remove('changing');
-            } else {
-                if (!intervalId) {
-                    currentIndex = 0;
-                    bannerSpan.textContent = texts[0];
-                    startRotator();
-                }
+
+            if (!bannerSpan.contains(innerSpan)) {
+                bannerSpan.innerHTML = '';
+                bannerSpan.appendChild(innerSpan);
             }
+            currentIndex = 0;
+            innerSpan.textContent = texts[0];
+            innerSpan.style.opacity = '1';
+            innerSpan.style.transform = 'translateY(0)';
+            startRotator();
         }
 
         window.addEventListener('resize', handleResize);
         handleResize();
     }
 
-        // ============================================
-    // ТАБЫ НА СТРАНИЦЕ УСЛУГ (filter_tab)
-    // ============================================
     const servicesSection = document.querySelector('.text_block__v2');
     if (servicesSection) {
         const filterTabs = servicesSection.querySelectorAll('.filter_tab');
         const cardsContainers = servicesSection.querySelectorAll('.text_block__v2__cards');
 
-        filterTabs.forEach((tab, index) => {
+        const mobileFilterActive = document.getElementById('mobileFilterActive');
+        const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+        const filterSheet = document.getElementById('filterSheet');
+        const filterSheetOverlay = document.getElementById('filterSheetOverlay');
+        const filterSheetClose = document.getElementById('filterSheetClose');
+        const mobileFilterOptions = document.querySelectorAll('input[name="mobile-filter"]');
+
+        const filterNames = {
+            'all': 'Все услуги',
+            'promotion': 'Продвижение',
+            'strategies': 'Стратегии',
+            'outstaff': 'Аутстафф'
+        };
+
+        filterTabs.forEach((tab) => {
             tab.addEventListener('click', function (e) {
                 e.preventDefault();
-
-                // Убираем active у всех табов
-                filterTabs.forEach(t => t.classList.remove('active'));
-                // Добавляем active текущему табу
-                tab.classList.add('active');
-
-                // Скрываем все блоки с карточками
-                cardsContainers.forEach(container => container.classList.remove('active'));
-                // Показываем нужный блок
-                if (cardsContainers[index]) {
-                    cardsContainers[index].classList.add('active');
-                }
+                const filterValue = this.dataset.filter;
+                switchFilter(filterValue);
             });
         });
+
+        function openFilterSheet() {
+            if (!filterSheet) return;
+            filterSheet.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFilterSheet() {
+            if (!filterSheet) return;
+            filterSheet.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        if (mobileFilterToggle) {
+            mobileFilterToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                openFilterSheet();
+            });
+        }
+
+        if (filterSheetOverlay) {
+            filterSheetOverlay.addEventListener('click', closeFilterSheet);
+        }
+
+        if (filterSheetClose) {
+            filterSheetClose.addEventListener('click', closeFilterSheet);
+        }
+
+        mobileFilterOptions.forEach(option => {
+            option.addEventListener('change', function () {
+                const filterValue = this.value;
+                switchFilter(filterValue);
+                setTimeout(closeFilterSheet, 150);
+            });
+        });
+
+        function switchFilter(filterValue) {
+            filterTabs.forEach(t => {
+                t.classList.remove('active');
+                if (t.dataset.filter === filterValue) {
+                    t.classList.add('active');
+                }
+            });
+
+            if (mobileFilterActive && filterNames[filterValue]) {
+                mobileFilterActive.textContent = filterNames[filterValue];
+            }
+
+            mobileFilterOptions.forEach(opt => {
+                opt.checked = (opt.value === filterValue);
+            });
+
+            if (filterValue === 'all') {
+                cardsContainers.forEach(container => container.classList.add('active'));
+            } else {
+                cardsContainers.forEach(container => container.classList.remove('active'));
+                const targetContainer = document.getElementById(filterValue);
+                if (targetContainer) {
+                    targetContainer.classList.add('active');
+                }
+            }
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && filterSheet && filterSheet.classList.contains('open')) {
+                closeFilterSheet();
+            }
+        });
     }
+
 });
