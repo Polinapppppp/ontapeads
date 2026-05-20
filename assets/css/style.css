@@ -503,6 +503,10 @@ a {
     display: block;
 }
 
+.burger-btn.burger__header_2 span{
+    background: #000;
+}
+
 .burger-btn.active span:first-child {
     transform: rotate(45deg);
     position: absolute;
@@ -2865,7 +2869,6 @@ button[type="submit"]:hover {
 
     .title-sub h1 {
         font-size: 50px;
-        line-height: 110.00000000000001%;
     }
 
     .banner-span {
@@ -3187,7 +3190,6 @@ button[type="submit"]:hover {
     }
 
     p.questions_text {
-        font-size: 14px;
         white-space: normal;
     }
 
@@ -3538,7 +3540,7 @@ button[type="submit"]:hover {
 
     .title-sub h1 {
         font-size: 44px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .banner-span {
@@ -3873,7 +3875,7 @@ button[type="submit"]:hover {
 
     .services_card__cheap p {
         font-size: 14px;
-        padding: 4px 12px;
+        padding: 6px 12px;
     }
 
     .services_card__bottom h3 {
