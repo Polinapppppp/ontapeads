@@ -497,7 +497,7 @@ a {
 .burger-btn span {
     width: 100%;
     height: 2px;
-    background: white;
+    background: #0080FF;
     border-radius: 2px;
     transition: all 0.3s ease;
     display: block;
@@ -1039,6 +1039,7 @@ a {
 .text_block__v3__btn {
     font-size: 16px;
     border-radius: 24px;
+    font-weight: 500;
 }
 
 .text_block__v3_card {
@@ -1051,7 +1052,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+
 }
 
 .text_block__v3_card_content::before {
@@ -1071,7 +1072,7 @@ a {
     opacity: 1;
 }
 
-.text_block__v3_bg_wrap{
+.text_block__v3_bg_wrap {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -1083,7 +1084,7 @@ a {
 }
 
 .text_block__v3_bg {
-        width: 100%;
+    width: 100%;
     height: 100%;
     transition: transform 0.6s ease-out;
 
@@ -1135,7 +1136,6 @@ a {
 .text_block__v3_bottom p {
     z-index: 1;
     font-weight: 500;
-    font-style: Medium;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0%;
@@ -1479,7 +1479,7 @@ input[type="checkbox"]:checked {
     flex-direction: column;
     max-width: 409px;
     gap: 8px;
-    height: 414px;
+    height: 464px;
     overflow-y: auto;
 }
 
@@ -1518,8 +1518,8 @@ input[type="checkbox"]:checked {
     padding: 32px;
     position: relative;
     width: 100%;
-    max-height: 414px;
-    height: 414px;
+    max-height: 464px;
+    height: 464px;
 }
 
 .question_content {
@@ -1545,7 +1545,7 @@ p.questions_text {
     line-height: 140%;
     letter-spacing: 0%;
     color: rgba(0, 0, 0, 0.7);
-    max-width: 675px;
+    max-width: 779px;
     opacity: 0.7;
     white-space: pre-line;
 }
@@ -2689,12 +2689,12 @@ button[type="submit"]:hover {
     }
 
     .banner_main--services .banner_img {
-        padding-top: 500px;
+        padding-top: 500px !important;
     }
 
     .banner_main--services .banner_img img {
-        max-height: calc(100% - 320px);
-        transform: scale(1.3);
+        max-height: calc(100% - 320px) !important;
+        transform: scale(1.3) !important;
     }
 
     .banner_img {
@@ -2703,6 +2703,14 @@ button[type="submit"]:hover {
 
     .banner_img img {
         max-height: calc(100% - 130px) !important;
+    }
+
+    .banner_main--company .banner_img {
+        padding-top: 390px !important;
+    }
+
+    .banner_main--company .banner_img img {
+        max-height: calc(100% - 290px) !important;
     }
 }
 
@@ -3022,7 +3030,7 @@ button[type="submit"]:hover {
     }
 
 
-    .text_block__v3_bg img{
+    .text_block__v3_bg img {
         height: 346px;
         width: 100%;
     }
@@ -3635,6 +3643,24 @@ button[type="submit"]:hover {
         align-items: start;
         gap: 8px;
     }
+  .services_card__cheaps.pyramid-fixed {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .services_card__cheaps.pyramid-fixed .services_card__cheap {
+        display: flex;
+        gap: 8px;
+        width: fit-content;
+    }
+
+    .services_card__cheaps.pyramid-fixed .services_card__cheap p {
+        white-space: nowrap;
+    }
 
     .text_block__v2_filters {
         padding: 6px;
@@ -3872,9 +3898,25 @@ button[type="submit"]:hover {
         gap: 16px;
     }
 
+    .text_block__v3_cards {
+        width: 100%;
+    }
 
-    .text_block__v3_card{
+    .text_block__v3_card {
         height: 362px;
+        padding: 0;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .text_block__v3_card_content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .text_block__v3-title {
@@ -3888,7 +3930,8 @@ button[type="submit"]:hover {
 
     .text_block__v3_top {
         padding: 8px;
-        max-width: 325px;
+        max-width: 330px;
+        position: relative;
     }
 
     .text_block__v3_top p {
@@ -3897,7 +3940,11 @@ button[type="submit"]:hover {
     }
 
     .text_block__v3_bottom {
-        padding: 174px 14px 16px 16px;
+        margin-top: auto;
+        padding: 0 14px 16px 16px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .text_block__v3_bottom h3 {
@@ -3906,6 +3953,7 @@ button[type="submit"]:hover {
 
     .text_block__v3_bottom p {
         font-size: 14px;
+        max-width: 297px;
     }
 
     /* text_block__v4 */
@@ -3918,6 +3966,10 @@ button[type="submit"]:hover {
         top: 155px;
         width: 100%;
         background-position: center top;
+    }
+
+    .text_block__v4--title p {
+        max-width: 295px;
     }
 
     .text_block__v4--title h2 {
@@ -4077,8 +4129,8 @@ button[type="submit"]:hover {
     }
 
     .text_block__v10_img img {
-        width: 305px;
-        height: 301px;
+        width: 370px;
+        height: 370px;
         bottom: 0;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
