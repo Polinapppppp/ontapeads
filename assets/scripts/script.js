@@ -427,6 +427,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
+        if (mobileFilterActive) {
+            mobileFilterActive.addEventListener('click', function (e) {
+                e.preventDefault();
+                openFilterSheet();
+            });
+        }
+
         if (filterSheetOverlay) {
             filterSheetOverlay.addEventListener('click', closeFilterSheet);
         }

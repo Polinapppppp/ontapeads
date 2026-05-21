@@ -3767,6 +3767,7 @@ button[type="submit"]:hover {
         white-space: nowrap;
         line-height: 120%;
         width: 100%;
+        color: #000000;
     }
 
     .mobile-filter-toggle {
