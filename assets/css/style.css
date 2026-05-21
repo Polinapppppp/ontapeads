@@ -549,7 +549,6 @@ a {
 
 .mobile-menu.active .header__right_btn {
     display: flex;
-    margin-bottom: 14px;
     align-items: center;
 }
 
@@ -809,7 +808,7 @@ a {
 
 .text_block__v1--content .card.span-2.card_v2 img {
     position: absolute;
-    left: 200px;
+    left: 50%;
     bottom: 0;
     width: 50%;
     height: auto;
@@ -819,6 +818,7 @@ a {
     z-index: 1;
     opacity: 0.9;
     pointer-events: none;
+    transform: translateX(-50%);
 }
 
 .text_block__v1--content .card.span-2 img {
@@ -2805,8 +2805,9 @@ button[type="submit"]:hover {
     }
 
     .header__inner {
-        padding: 17px 18px;
+        padding: 16px 24px;
     }
+    
 
     .mobile_header__inner {
         margin-right: 14px;
@@ -2935,7 +2936,6 @@ button[type="submit"]:hover {
 
     .text_block__v1--content .card.span-2.card_v2 img {
         width: 304px;
-        left: auto;
         right: 0;
     }
 
@@ -3221,7 +3221,7 @@ button[type="submit"]:hover {
 
     .text_block__v8_card.card.flex_row {
         gap: 36px;
-        padding: 24px;
+        padding: 16px;
         flex-direction: column;
         position: relative;
         height: auto;
@@ -3534,12 +3534,12 @@ button[type="submit"]:hover {
 
     .banner_main--cases .banner_img {
         padding-top: 185px;
-        left: 65%;
+        left: 67%;
     }
 
     .banner_main--cases .banner_img img {
         max-height: calc(100% - 180px);
-        transform: scale(1.35) rotate(-10deg);
+        transform: scale(1.36) rotate(-10deg);
         transform-origin: bottom center;
     }
 
@@ -3589,7 +3589,7 @@ button[type="submit"]:hover {
 
     .banner_main--services .banner_img img {
         max-height: calc(100% - 312px);
-        transform: scale(1.0);
+        transform: scale(1.1);
     }
 
     .banner_main--company .banner_img {
@@ -3604,18 +3604,19 @@ button[type="submit"]:hover {
 
     .banner_main--contacts .banner_img {
         padding-top: 350px !important;
+            
+            left: 75%;
     }
 
     .banner_main--contacts .banner_img img {
         max-height: calc(100% - 320px) !important;
-        transform: scale(1.1);
-    }
-
-
-    .banner_main--contacts .banner_img img {
+        transform: scale(1.1) rotate(-30deg);
+        
         mask-image: linear-gradient(0, transparent 25%, #ffffff 50%);
         -webkit-mask-image: linear-gradient(0, transparent 25%, #ffffff 50%);
     }
+
+
 
     /* text_block__v1 */
     .text_block__v1_text {
@@ -3661,7 +3662,7 @@ button[type="submit"]:hover {
         max-width: 295px;
     }
 
-        .services_card__cheap {
+    .services_card__cheap {
         display: contents;
         gap: 8px;
         width: fit-content;
@@ -3671,62 +3672,185 @@ button[type="submit"]:hover {
         white-space: nowrap;
     }
 
-        .service-direct .chip-1 { order: 1; }
-    .service-direct .chip-2 { order: 3; }
-    .service-direct .chip-3 { order: 4; }
-    .service-direct .chip-4 { order: 2; }
+    .service-direct .chip-1 {
+        order: 1;
+    }
 
-    .service-seo .chip-1 { order: 1; }
-    .service-seo .chip-2 { order: 2; }
-    .service-seo .chip-3 { order: 4; }
-    .service-seo .chip-4 { order: 3; }
+    .service-direct .chip-2 {
+        order: 3;
+    }
 
-    .service-smm .chip-1 { order: 1; }
-    .service-smm .chip-3 { order: 2; } 
-    .service-smm .chip-2 { order: 3; }
+    .service-direct .chip-3 {
+        order: 4;
+    }
 
-   .service-media .chip-2 { order: 1; }  
-    .service-media .chip-3 { order: 2; }  
-    .service-media .chip-1 { order: 3; }  
-    .service-media .chip-4 { display: none; }
+    .service-direct .chip-4 {
+        order: 2;
+    }
 
-    .service-digital .chip-1 { order: 1; }
-    .service-digital .chip-2 { order: 3; }
-    .service-digital .chip-3 { order: 2; }
-    .service-digital .chip-4 { order: 4; }
+    .service-seo .chip-1 {
+        order: 1;
+    }
 
-    .service-brand .chip-1 { order: 1; }
-    .service-brand .chip-2 { order: 4; }
-    .service-brand .chip-3 { order: 3; }
-    .service-brand .chip-4 { order: 2; }
+    .service-seo .chip-2 {
+        order: 2;
+    }
 
-   .service-utp .chip-3 { order: 1; }  
-    .service-utp .chip-1 { order: 2; } 
-    .service-utp .chip-2 { order: 3; }  
+    .service-seo .chip-3 {
+        order: 4;
+    }
 
-    .service-content .chip-1 { order: 1; }
-    .service-content .chip-2 { order: 3; }
-    .service-content .chip-3 { order: 2; }
-    .service-content .chip-4 { order: 4; }
+    .service-seo .chip-4 {
+        order: 3;
+    }
 
-    .service-outstaff .chip-4 { order: 1; }  
-    .service-outstaff .chip-1 { order: 2; }  
-    .service-outstaff .chip-2 { order: 3; }  
-    .service-outstaff .chip-3 { display: none; }
+    .service-smm .chip-1 {
+        order: 1;
+    }
 
-    .service-mediaplan .chip-1 { order: 1; }
-    .service-mediaplan .chip-2 { order: 2; }
-    .service-mediaplan .chip-3 { order: 3; }
+    .service-smm .chip-3 {
+        order: 2;
+    }
 
-    .service-site .chip-1 { order: 1; }
-    .service-site .chip-2 { order: 2; }
-    .service-site .chip-3 { order: 3; }
-    .service-site .chip-4 { order: 4; }
+    .service-smm .chip-2 {
+        order: 3;
+    }
 
-    .service-analytics .chip-1 { order: 1; }
-    .service-analytics .chip-2 { order: 2; }
-    .service-analytics .chip-3 { order: 3; }
-    .service-analytics .chip-4 { order: 4; }
+    .service-media .chip-2 {
+        order: 1;
+    }
+
+    .service-media .chip-3 {
+        order: 2;
+    }
+
+    .service-media .chip-1 {
+        order: 3;
+    }
+
+    .service-media .chip-4 {
+        display: none;
+    }
+
+    .service-digital .chip-1 {
+        order: 1;
+    }
+
+    .service-digital .chip-2 {
+        order: 3;
+    }
+
+    .service-digital .chip-3 {
+        order: 2;
+    }
+
+    .service-digital .chip-4 {
+        order: 4;
+    }
+
+    .service-brand .chip-1 {
+        order: 1;
+    }
+
+    .service-brand .chip-2 {
+        order: 4;
+    }
+
+    .service-brand .chip-3 {
+        order: 3;
+    }
+
+    .service-brand .chip-4 {
+        order: 2;
+    }
+
+    .service-utp .chip-3 {
+        order: 1;
+    }
+
+    .service-utp .chip-1 {
+        order: 2;
+    }
+
+    .service-utp .chip-2 {
+        order: 3;
+    }
+
+    .service-content .chip-1 {
+        order: 1;
+    }
+
+    .service-content .chip-2 {
+        order: 3;
+    }
+
+    .service-content .chip-3 {
+        order: 2;
+    }
+
+    .service-content .chip-4 {
+        order: 4;
+    }
+
+    .service-outstaff .chip-4 {
+        order: 1;
+    }
+
+    .service-outstaff .chip-1 {
+        order: 2;
+    }
+
+    .service-outstaff .chip-2 {
+        order: 3;
+    }
+
+    .service-outstaff .chip-3 {
+        display: none;
+    }
+
+    .service-mediaplan .chip-1 {
+        order: 1;
+    }
+
+    .service-mediaplan .chip-2 {
+        order: 2;
+    }
+
+    .service-mediaplan .chip-3 {
+        order: 3;
+    }
+
+    .service-site .chip-1 {
+        order: 1;
+    }
+
+    .service-site .chip-2 {
+        order: 2;
+    }
+
+    .service-site .chip-3 {
+        order: 3;
+    }
+
+    .service-site .chip-4 {
+        order: 4;
+    }
+
+    .service-analytics .chip-1 {
+        order: 1;
+    }
+
+    .service-analytics .chip-2 {
+        order: 2;
+    }
+
+    .service-analytics .chip-3 {
+        order: 3;
+    }
+
+    .service-analytics .chip-4 {
+        order: 4;
+    }
 
 
     .text_block__v2_filters {
@@ -4042,6 +4166,11 @@ button[type="submit"]:hover {
         top: 155px;
         width: 100%;
         background-position: center top;
+    }
+
+    .form-bg-image.form2,
+    .form-bg-image.form1 {
+        width: 350px;
     }
 
     .text_block__v4--title p {
