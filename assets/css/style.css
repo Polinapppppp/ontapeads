@@ -3225,10 +3225,18 @@ button[type="submit"]:hover {
 
     .text_block__v8_card.card.flex_row {
         gap: 36px;
-        padding: 16px;
+        padding: 24px 16px 16px 16px;
         flex-direction: column;
         position: relative;
         height: auto;
+    }
+
+    .company_card__text{
+        padding: 0 8px;
+    }
+
+    .company_card__logo{
+        padding: 0 8px;
     }
 
     .company_card__content.company_est {
@@ -3237,7 +3245,7 @@ button[type="submit"]:hover {
 
 
     .company_card__left img {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         height: 48px;
     }
 
