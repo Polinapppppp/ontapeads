@@ -2730,11 +2730,11 @@ button[type="submit"]:hover {
     }
 
     .banner_img {
-        padding-top: 250px;
+        padding-top: 255px;
     }
 
     .banner_img img {
-        max-height: calc(100% - 200px);
+        max-height: calc(100% - 185px);
     }
 }
 
@@ -3645,24 +3645,83 @@ button[type="submit"]:hover {
         gap: 8px;
     }
 
-    .services_card__cheaps.pyramid-fixed {
+
+    .services_card__cheaps {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: flex-start;
         gap: 8px;
-        max-width: 300px;
-        width: 100%;
+        max-width: 295px;
     }
 
-    .services_card__cheaps.pyramid-fixed .services_card__cheap {
-        display: flex;
+        .services_card__cheap {
+        display: contents;
         gap: 8px;
         width: fit-content;
     }
 
-    .services_card__cheaps.pyramid-fixed .services_card__cheap p {
+    .services_card__cheap p {
         white-space: nowrap;
     }
+
+        .service-direct .chip-1 { order: 1; }
+    .service-direct .chip-2 { order: 3; }
+    .service-direct .chip-3 { order: 4; }
+    .service-direct .chip-4 { order: 2; }
+
+    .service-seo .chip-1 { order: 1; }
+    .service-seo .chip-2 { order: 2; }
+    .service-seo .chip-3 { order: 4; }
+    .service-seo .chip-4 { order: 3; }
+
+    .service-smm .chip-1 { order: 1; }
+    .service-smm .chip-3 { order: 2; } 
+    .service-smm .chip-2 { order: 3; }
+
+   .service-media .chip-2 { order: 1; }  
+    .service-media .chip-3 { order: 2; }  
+    .service-media .chip-1 { order: 3; }  
+    .service-media .chip-4 { display: none; }
+
+    .service-digital .chip-1 { order: 1; }
+    .service-digital .chip-2 { order: 3; }
+    .service-digital .chip-3 { order: 2; }
+    .service-digital .chip-4 { order: 4; }
+
+    .service-brand .chip-1 { order: 1; }
+    .service-brand .chip-2 { order: 4; }
+    .service-brand .chip-3 { order: 3; }
+    .service-brand .chip-4 { order: 2; }
+
+   .service-utp .chip-3 { order: 1; }  
+    .service-utp .chip-1 { order: 2; } 
+    .service-utp .chip-2 { order: 3; }  
+
+    .service-content .chip-1 { order: 1; }
+    .service-content .chip-2 { order: 3; }
+    .service-content .chip-3 { order: 2; }
+    .service-content .chip-4 { order: 4; }
+
+    .service-outstaff .chip-4 { order: 1; }  
+    .service-outstaff .chip-1 { order: 2; }  
+    .service-outstaff .chip-2 { order: 3; }  
+    .service-outstaff .chip-3 { order: 4; }
+
+    .service-mediaplan .chip-1 { order: 1; }
+    .service-mediaplan .chip-2 { order: 2; }
+    .service-mediaplan .chip-3 { order: 3; }
+
+    .service-site .chip-1 { order: 1; }
+    .service-site .chip-2 { order: 2; }
+    .service-site .chip-3 { order: 3; }
+    .service-site .chip-4 { order: 4; }
+
+    .service-analytics .chip-1 { order: 1; }
+    .service-analytics .chip-2 { order: 2; }
+    .service-analytics .chip-3 { order: 3; }
+    .service-analytics .chip-4 { order: 4; }
+
 
     .text_block__v2_filters {
         padding: 6px;

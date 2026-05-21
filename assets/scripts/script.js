@@ -477,31 +477,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    (function() {
-    function pyramid() {
-        if (window.innerWidth > 768) return;
-        
-        document.querySelectorAll('.services_card__cheaps').forEach(container => {
-            const chips = Array.from(container.querySelectorAll('p'));
-            if (chips.length < 3) return;
-            
-           
-            container.classList.add('pyramid-fixed');
-            
-            
-            chips.forEach((chip, i) => {
-                chip.style.display = i < 3 ? '' : 'none';
-            });
-            
-            const rows = container.querySelectorAll('.services_card__cheap');
-            if (rows.length >= 2 && chips[2] && chips[2].parentElement !== rows[1]) {
-                rows[1].innerHTML = '';
-                rows[1].appendChild(chips[2]);
-            }
-        });
-    }
-    
-    pyramid();
-    window.addEventListener('resize', pyramid);
-})();
 });
