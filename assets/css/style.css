@@ -622,6 +622,10 @@ a {
     word-wrap: break-word;
 }
 
+.banner_main--home .title-sub h1{
+    line-height: 110%;
+}
+
 .banner-span {
     display: inline-block;
     padding: 0px 0 12px 0;
