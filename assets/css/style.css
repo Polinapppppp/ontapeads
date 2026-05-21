@@ -472,10 +472,10 @@ a {
 .header__right_btn {
     font-weight: 500;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 122%;
     letter-spacing: 0%;
-    padding: 9px 31px;
-    height: 40px;
+    padding: 12px 24px;
+    height: 44px;
     display: flex;
     align-items: center;
 }
@@ -503,7 +503,7 @@ a {
     display: block;
 }
 
-.burger-btn.burger__header_2 span{
+.burger-btn.burger__header_2 span {
     background: #000;
 }
 
@@ -894,7 +894,7 @@ a {
 }
 
 .filter_tab {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 122%;
     letter-spacing: 0%;
@@ -903,9 +903,8 @@ a {
 }
 
 .filter_tab.active {
-    background-color: rgba(29, 32, 35, 1);
+    background-color: #E3F1FF;
     border-radius: 24px;
-    color: #fff;
 }
 
 .text_block__v2--content {
@@ -1017,11 +1016,10 @@ a {
 
 .services_card__btn {
     display: block;
-    padding: 20px;
+    padding: 16px;
     font-weight: 500;
     font-size: 24px;
     line-height: 122%;
-    letter-spacing: 2%;
     text-align: center;
 }
 
@@ -1645,7 +1643,6 @@ p.questions_text {
     color: #F7F7F7;
     font-size: 16px;
     line-height: 122%;
-    letter-spacing: 0.02em;
     font-weight: 500;
     display: block;
     transition: 0.5s ease;
@@ -1751,7 +1748,6 @@ p.questions_text {
     cursor: pointer;
     font-size: 16px;
     line-height: 122%;
-    letter-spacing: 0.02em;
     padding: 12px 16px;
     width: 100%;
     font-weight: 500;
@@ -2160,7 +2156,6 @@ p.contact_group__left_tel {
     font-weight: 500;
     padding: 12px 32px;
     margin-top: 42px;
-    letter-spacing: 2%;
 }
 
 /* footer */
@@ -2730,8 +2725,8 @@ button[type="submit"]:hover {
     }
 
     .banner_main--contacts .banner_img img {
-        mask-image: linear-gradient(0, transparent 10%, #ffffff 40%);
-        -webkit-mask-image: linear-gradient(0, transparent 60%, #ffffff 76%);
+        mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
+        -webkit-mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
     }
 
     .banner_img {
@@ -3226,6 +3221,10 @@ button[type="submit"]:hover {
         height: auto;
     }
 
+    .company_card__content.company_est {
+        margin-top: 16px;
+    }
+
 
     .company_card__left img {
         margin-bottom: 8px;
@@ -3578,12 +3577,12 @@ button[type="submit"]:hover {
     }
 
     .banner_main--services .banner_img {
-        padding-top: 272px;
+        padding-top: 282px;
         left: 55%;
     }
 
     .banner_main--services .banner_img img {
-        max-height: calc(100% - 320px);
+        max-height: calc(100% - 312px);
         transform: scale(1.0);
     }
 
@@ -3598,12 +3597,12 @@ button[type="submit"]:hover {
 
 
     .banner_main--contacts .banner_img {
-        padding-top: 400px !important;
+        padding-top: 350px !important;
     }
 
     .banner_main--contacts .banner_img img {
-        max-height: calc(100% - 350px) !important;
-        transform: scale(1.0);
+        max-height: calc(100% - 320px) !important;
+        transform: scale(1.1);
     }
 
 
@@ -3645,7 +3644,8 @@ button[type="submit"]:hover {
         align-items: start;
         gap: 8px;
     }
-  .services_card__cheaps.pyramid-fixed {
+
+    .services_card__cheaps.pyramid-fixed {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -3682,7 +3682,16 @@ button[type="submit"]:hover {
         border-radius: 24px;
         width: 100%;
         gap: 4px;
+
+    }
+
+    .filter__wrapper {
+        display: flex;
+        background: #E3F1FF;
         justify-content: center;
+        border-radius: 24px;
+        position: relative;
+        width: 100%;
     }
 
 
@@ -3690,8 +3699,7 @@ button[type="submit"]:hover {
         font-family: 'Manrope';
 
         padding: 11px 35px;
-        background: rgba(29, 32, 35, 1);
-        color: #fff;
+
         border-radius: 24px;
         font-size: 14px;
         font-weight: 500;
@@ -3707,16 +3715,16 @@ button[type="submit"]:hover {
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 11px 35px;
-        background: #fff;
+        padding: 12px 0;
         color: rgba(0, 0, 0, 1);
         font-size: 14px;
         font-weight: 500;
         cursor: pointer;
-        width: 100%;
-        justify-content: center;
+        width: auto;
+        justify-content: end;
         line-height: 120%;
-
+        position: absolute;
+        right: 24px;
     }
 
     .mobile-filter-toggle svg {
@@ -3858,7 +3866,9 @@ button[type="submit"]:hover {
 
     .services_card__logo {
         gap: 8px;
+        margin-bottom: 12px;
     }
+
 
     .services_card__logo img {
         width: 24px;
@@ -3875,7 +3885,7 @@ button[type="submit"]:hover {
 
     .services_card__cheap p {
         font-size: 14px;
-        padding: 6px 12px;
+        padding: 6px 16px;
     }
 
     .services_card__bottom h3 {
@@ -3890,7 +3900,7 @@ button[type="submit"]:hover {
     }
 
     .services_card__btn {
-        padding: 16px;
+        padding: 14px;
         font-size: 16px;
         border-radius: 24px;
     }
