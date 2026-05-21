@@ -3706,7 +3706,7 @@ button[type="submit"]:hover {
     .service-outstaff .chip-4 { order: 1; }  
     .service-outstaff .chip-1 { order: 2; }  
     .service-outstaff .chip-2 { order: 3; }  
-    .service-outstaff .chip-3 { order: 4; }
+    .service-outstaff .chip-3 { display: none; }
 
     .service-mediaplan .chip-1 { order: 1; }
     .service-mediaplan .chip-2 { order: 2; }
