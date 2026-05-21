@@ -728,8 +728,8 @@ a {
 }
 
 .banner_main--contacts .banner_img img {
-    mask-image: linear-gradient(0, transparent 10%, #ffffff 40%);
-    -webkit-mask-image: linear-gradient(0, transparent 60%, #ffffff 76%);
+    mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
+    -webkit-mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
 }
 
 .banner_main--company .banner-span,
@@ -1025,7 +1025,7 @@ a {
     display: block;
     padding: 16px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 122%;
     text-align: center;
 }
@@ -2764,8 +2764,8 @@ button[type="submit"]:hover {
     }
 
     .banner_main--contacts .banner_img img {
-        mask-image: linear-gradient(0, transparent 10%, #ffffff 40%);
-        -webkit-mask-image: linear-gradient(0, transparent 60%, #ffffff 76%);
+        mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
+        -webkit-mask-image: linear-gradient(0, transparent 50%, #ffffff 76%);
     }
 
     .banner_img {
