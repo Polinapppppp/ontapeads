@@ -4008,13 +4008,11 @@ button[type="submit"]:hover {
 
     .text_block__v3_top {
         padding: 8px;
-        max-width: 330px;
         position: relative;
     }
 
     .text_block__v3_top p {
         font-size: 14px;
-        padding: 4px 12px;
     }
 
     .text_block__v3_bottom {
