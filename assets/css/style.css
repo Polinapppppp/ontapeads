@@ -3539,7 +3539,7 @@ button[type="submit"]:hover {
 
     .banner_main--cases .banner_img img {
         max-height: calc(100% - 180px);
-        transform: scale(1.32) rotate(-10deg);
+        transform: scale(1.35) rotate(-10deg);
         transform-origin: bottom center;
     }
 
