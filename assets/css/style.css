@@ -622,7 +622,7 @@ a {
     word-wrap: break-word;
 }
 
-.banner_main--home .title-sub h1{
+.banner_main--home .title-sub h1 {
     line-height: 110%;
 }
 
@@ -2811,7 +2811,7 @@ button[type="submit"]:hover {
     .header__inner {
         padding: 16px 24px;
     }
-    
+
 
     .mobile_header__inner {
         margin-right: 14px;
@@ -3231,11 +3231,11 @@ button[type="submit"]:hover {
         height: auto;
     }
 
-    .company_card__text{
+    .company_card__text {
         padding: 0 8px;
     }
 
-    .company_card__logo{
+    .company_card__logo {
         padding: 0 8px;
     }
 
@@ -3318,6 +3318,26 @@ button[type="submit"]:hover {
 
     .text_bottom__v8_bottom {
         margin-top: 16px;
+    }
+
+    /* vacancy */
+    .vacancy--card {
+        padding: 16px;
+    }
+
+    .vacacy__skills{
+        padding: 0 8px;
+    }
+
+    .vacancy__skills_title{
+         padding: 0 8px;
+       
+    }
+
+    .vacancy__description,
+    .experiance,
+    .vacancy--card h3{
+         padding: 0 8px;
     }
 
     /* text_block__v9 */
@@ -3536,6 +3556,7 @@ button[type="submit"]:hover {
     /* banner */
     .banner_main {
         height: 85vh;
+        height: 85dvh;
         padding-top: 119px;
         border-radius: 0 0 32px 32px;
     }
@@ -3616,14 +3637,13 @@ button[type="submit"]:hover {
 
     .banner_main--contacts .banner_img {
         padding-top: 350px !important;
-            
-            left: 75%;
+
     }
 
     .banner_main--contacts .banner_img img {
         max-height: calc(100% - 320px) !important;
         transform: scale(1.1) rotate(-30deg);
-        
+
         mask-image: linear-gradient(0, transparent 25%, #ffffff 50%);
         -webkit-mask-image: linear-gradient(0, transparent 25%, #ffffff 50%);
     }
