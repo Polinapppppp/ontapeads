@@ -3556,7 +3556,6 @@ button[type="submit"]:hover {
     /* banner */
     .banner_main {
         height: 85vh;
-        height: 85dvh;
         padding-top: 119px;
         border-radius: 0 0 32px 32px;
     }
