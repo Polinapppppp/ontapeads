@@ -3638,6 +3638,7 @@ button[type="submit"]:hover {
     .banner_main--contacts .banner_img {
         padding-top: 350px !important;
 
+        left: 90%;
     }
 
     .banner_main--contacts .banner_img img {
