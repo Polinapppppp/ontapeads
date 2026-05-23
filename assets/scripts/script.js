@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu.classList.toggle('active');
 
             const isOpen = mobileMenu.classList.contains('active');
-            if (headerInner) headerInner.style.background = '#C7E3FF80';
+            if (headerInner) headerInner.style.background = '#FFFFFF99';
             document.body.style.overflow = isOpen ? 'hidden' : '';
         });
 
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link.addEventListener('click', () => {
                 burgerBtn.classList.remove('active');
                 mobileMenu.classList.remove('active');
-                if (headerInner) headerInner.style.background = '#C7E3FF80';
+                if (headerInner) headerInner.style.background = '#FFFFFF99';
                 document.body.style.overflow = '';
             });
         });
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!burgerBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
                 burgerBtn.classList.remove('active');
                 mobileMenu.classList.remove('active');
-                if (headerInner) headerInner.style.background = '#C7E3FF80';
+                if (headerInner) headerInner.style.background = '#FFFFFF99';
                 document.body.style.overflow = '';
             }
         });

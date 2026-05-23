@@ -920,7 +920,7 @@ a {
 
 .text_block__v2--content {
     gap: 16px;
-    grid-template-rows: 467px;
+    grid-template-rows: 475px;
 }
 
 .card-bg-image {
@@ -960,7 +960,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 387px;
+    height: 413px;
 }
 
 .services_card__top {
@@ -3577,12 +3577,12 @@ button[type="submit"]:hover {
 
     .banner_main--cases .banner_img {
         padding-top: 185px;
-        left: 67%;
+        left: 69%;
     }
 
     .banner_main--cases .banner_img img {
         max-height: calc(100% - 180px);
-        transform: scale(1.36) rotate(-10deg);
+        transform: scale(1.4) rotate(-10deg);
         transform-origin: bottom center;
     }
 
@@ -3636,12 +3636,12 @@ button[type="submit"]:hover {
     }
 
     .banner_main--company .banner_img {
-        padding-top: 50px;
+        padding-top: 55px;
     }
 
     .banner_main--company .banner_img img {
         max-height: calc(100% - 85px);
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 
 
@@ -3701,8 +3701,7 @@ button[type="submit"]:hover {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        gap: 8px;
-        max-width: 295px;
+        gap: 6px;
     }
 
     .services_card__cheap {
@@ -3736,11 +3735,11 @@ button[type="submit"]:hover {
     }
 
     .service-seo .chip-2 {
-        order: 2;
+        order: 4;
     }
 
     .service-seo .chip-3 {
-        order: 4;
+        order: 2;
     }
 
     .service-seo .chip-4 {
@@ -3784,11 +3783,11 @@ button[type="submit"]:hover {
     }
 
     .service-digital .chip-3 {
-        order: 2;
+        order: 4;
     }
 
     .service-digital .chip-4 {
-        order: 4;
+        order: 2;
     }
 
     .service-brand .chip-1 {
@@ -3796,7 +3795,7 @@ button[type="submit"]:hover {
     }
 
     .service-brand .chip-2 {
-        order: 4;
+        order: 2;
     }
 
     .service-brand .chip-3 {
@@ -3804,7 +3803,7 @@ button[type="submit"]:hover {
     }
 
     .service-brand .chip-4 {
-        order: 2;
+        order: 4;
     }
 
     .service-utp .chip-3 {
@@ -3820,15 +3819,15 @@ button[type="submit"]:hover {
     }
 
     .service-content .chip-1 {
-        order: 1;
+        order: 2;
     }
 
     .service-content .chip-2 {
-        order: 3;
+        order: 1;
     }
 
     .service-content .chip-3 {
-        order: 2;
+        order: 3;
     }
 
     .service-content .chip-4 {
@@ -3836,7 +3835,7 @@ button[type="submit"]:hover {
     }
 
     .service-outstaff .chip-4 {
-        order: 1;
+        order: 3;
     }
 
     .service-outstaff .chip-1 {
@@ -4117,8 +4116,8 @@ button[type="submit"]:hover {
     }
 
     .services_card__cheap p {
-        font-size: 14px;
-        padding: 6px 16px;
+        font-size: 13.8px;
+        padding: 6px 14px;
     }
 
     .services_card__bottom h3 {
