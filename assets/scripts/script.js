@@ -1,102 +1,105 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const faqSection = document.querySelector('.faq-mobile-accordion');
-    if (faqSection) {
-        const tabs = Array.from(faqSection.querySelectorAll('.questions_tab'));
-        const contents = Array.from(faqSection.querySelectorAll('.question_content'));
-        const rightContainer = faqSection.querySelector('.questions_block__right');
-        const MOBILE_BREAKPOINT = 1100;
+   const faqSection = document.querySelector('.faq-mobile-accordion');
+if (faqSection) {
+    const tabs = Array.from(faqSection.querySelectorAll('.questions_tab'));
+    const contents = Array.from(faqSection.querySelectorAll('.question_content'));
+    const rightContainer = faqSection.querySelector('.questions_block__right');
+    const MOBILE_BREAKPOINT = 1100;
 
-        let activeIndex = 0;
-        let isMobileMode = window.innerWidth <= MOBILE_BREAKPOINT;
+    let activeIndex = 0;
+    let isMobileMode = window.innerWidth <= MOBILE_BREAKPOINT;
 
-        function initMobileLayout() {
-            if (window.innerWidth <= MOBILE_BREAKPOINT) {
-                contents.forEach((content, index) => {
-                    if (rightContainer && content.parentElement === rightContainer) {
-                        rightContainer.removeChild(content);
-                    }
-                    if (tabs[index]) {
-                        tabs[index].after(content);
-                    }
-                });
-                isMobileMode = true;
-            }
-        }
-
-        function scrollToTab(tab) {
-            const rect = tab.getBoundingClientRect();
-            const offset = 120; 
-            const scrollTop = window.pageYOffset + rect.top - offset;
-
-            window.scrollTo({
-                top: scrollTop,
-                behavior: 'smooth'
-            });
-        }
-
-        tabs.forEach((tab, index) => {
-            tab.addEventListener('click', function (e) {
-                e.preventDefault();
-                const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
-
-                if (isMobile) {
-                    if (tab.classList.contains('active')) {
-                        tab.classList.remove('active');
-                        contents[index].classList.remove('active');
-                        return;
-                    }
-                    tabs.forEach((t, i) => {
-                        t.classList.remove('active');
-                        contents[i].classList.remove('active');
-                    });
-                    tab.classList.add('active');
-                    contents[index].classList.add('active');
-
-                    setTimeout(() => scrollToTab(tab), 400);
-                } else {
-                    tabs.forEach((t, i) => {
-                        t.classList.toggle('active', i === index);
-                        contents[i].classList.toggle('active', i === index);
-                    });
-                    activeIndex = index;
+    function initMobileLayout() {
+        if (window.innerWidth <= MOBILE_BREAKPOINT) {
+            contents.forEach((content, index) => {
+                if (rightContainer && content.parentElement === rightContainer) {
+                    rightContainer.removeChild(content);
+                }
+                if (tabs[index]) {
+                    tabs[index].after(content);
                 }
             });
-        });
-
-        let resizeTimer;
-        window.addEventListener('resize', function () {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function () {
-                const mobileNow = window.innerWidth <= MOBILE_BREAKPOINT;
-                if (mobileNow !== isMobileMode) {
-                    if (mobileNow) {
-                        contents.forEach((content, index) => {
-                            if (rightContainer && content.parentElement === rightContainer) {
-                                rightContainer.removeChild(content);
-                            }
-                            if (tabs[index]) {
-                                tabs[index].after(content);
-                            }
-                        });
-                    } else {
-                        contents.forEach(content => {
-                            if (rightContainer && content.parentElement !== rightContainer) {
-                                rightContainer.appendChild(content);
-                            }
-                        });
-                    }
-                    isMobileMode = mobileNow;
-                }
-            }, 250);
-        });
-
-        initMobileLayout();
-        if (tabs.length) {
-            tabs[0].classList.add('active');
-            contents[0].classList.add('active');
+            isMobileMode = true;
         }
     }
+
+   
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+            const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+
+            if (isMobile) {
+                const isAlreadyActive = tab.classList.contains('active');
+
+                if (isAlreadyActive) {
+                    tab.classList.remove('active');
+                    contents[index].classList.remove('active');
+                    return;
+                }
+
+                tab.classList.add('active');
+                contents[index].classList.add('active');
+
+                tabs.forEach((t, i) => {
+                    if (i !== index) {
+                        t.classList.remove('active');
+                        contents[i].classList.remove('active');
+                    }
+                });
+
+                scrollToActiveTab(tab);
+
+            } else {
+                tabs.forEach((t, i) => {
+                    if (i === index) {
+                        t.classList.add('active');
+                        contents[i].classList.add('active');
+                    } else {
+                        t.classList.remove('active');
+                        contents[i].classList.remove('active');
+                    }
+                });
+                activeIndex = index;
+            }
+        });
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+            const mobileNow = window.innerWidth <= MOBILE_BREAKPOINT;
+            if (mobileNow !== isMobileMode) {
+                if (mobileNow) {
+                    contents.forEach((content, index) => {
+                        if (rightContainer && content.parentElement === rightContainer) {
+                            rightContainer.removeChild(content);
+                        }
+                        if (tabs[index]) {
+                            tabs[index].after(content);
+                        }
+                    });
+                } else {
+                    contents.forEach(content => {
+                        if (rightContainer && content.parentElement !== rightContainer) {
+                            rightContainer.appendChild(content);
+                        }
+                    });
+                }
+                isMobileMode = mobileNow;
+            }
+        }, 250);
+    });
+
+    initMobileLayout();
+    if (tabs.length) {
+        tabs[0].classList.add('active');
+        contents[0].classList.add('active');
+    }
+}
 
     const forwardSlider = document.querySelector('.partners_slider--forward');
     const reverseSlider = document.querySelector('.partners_slider--reverse');
@@ -340,34 +343,48 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCasesBtnText();
     }
 
-    const bannerSpan = document.querySelector('.banner-span[data-texts]');
+   const bannerSpan = document.querySelector('.banner-span[data-texts]');
     if (bannerSpan) {
         const texts = bannerSpan.dataset.texts.split('|');
         let currentIndex = 0;
         let intervalId = null;
-        const MOBILE_BREAKPOINT = 768;
+        
+        const textWrapper = document.createElement('span');
+        textWrapper.className = 'banner-text-wrapper';
+        textWrapper.style.display = 'inline-block';
+        textWrapper.style.position = 'relative';
+        textWrapper.style.height = '110%'; 
+        textWrapper.style.verticalAlign = 'bottom';
+        textWrapper.style.overflow = 'hidden';
 
         const innerSpan = document.createElement('span');
-        innerSpan.style.display = 'inline-block';
+        innerSpan.className = 'banner-text-inner';
+        innerSpan.style.display = 'block';
         innerSpan.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
         innerSpan.textContent = texts[0];
+        
+        textWrapper.appendChild(innerSpan);
         bannerSpan.innerHTML = '';
-        bannerSpan.appendChild(innerSpan);
+        bannerSpan.appendChild(textWrapper);
 
-        function startRotator() {
+        function changeText() {
+            innerSpan.style.opacity = '0';
+            innerSpan.style.transform = 'translateY(10px)';
 
-            intervalId = setInterval(() => {
+            setTimeout(() => {
                 currentIndex = (currentIndex + 1) % texts.length;
-
-                innerSpan.style.opacity = '0';
-                innerSpan.style.transform = 'translateY(10px)';
-
-                setTimeout(() => {
-                    innerSpan.textContent = texts[currentIndex];
+                innerSpan.textContent = texts[currentIndex];
+                
+                requestAnimationFrame(() => {
                     innerSpan.style.opacity = '1';
                     innerSpan.style.transform = 'translateY(0)';
-                }, 400);
-            }, 2500);
+                });
+            }, 400);
+        }
+
+        function startRotator() {
+            if (intervalId) clearInterval(intervalId);
+            intervalId = setInterval(changeText, 2500);
         }
 
         function stopRotator() {
@@ -377,21 +394,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        function handleResize() {
-
-            if (!bannerSpan.contains(innerSpan)) {
-                bannerSpan.innerHTML = '';
-                bannerSpan.appendChild(innerSpan);
-            }
-            currentIndex = 0;
-            innerSpan.textContent = texts[0];
-            innerSpan.style.opacity = '1';
-            innerSpan.style.transform = 'translateY(0)';
+        window.addEventListener('resize', () => {
+            stopRotator();
             startRotator();
-        }
+        });
 
-        window.addEventListener('resize', handleResize);
-        handleResize();
+        startRotator();
     }
 
     const servicesSection = document.querySelector('.text_block__v2');

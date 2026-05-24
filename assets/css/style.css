@@ -696,7 +696,7 @@ a {
 
 .banner_main--services .banner_img img {
     max-height: calc(100% - 320px);
-    transform: scale(1.5);
+    transform: scale(1.45);
 }
 
 .banner_main--company .banner_img {
@@ -860,7 +860,7 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    padding: 9px 20px;
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -1073,7 +1073,7 @@ a {
     right: 0;
     bottom: 0;
     height: 450px;
-    background: linear-gradient(0.53deg, #000000 10%, rgba(0, 0, 0, 0.5) 26.57%, rgba(0, 0, 0, 0) 34.79%);
+    background: linear-gradient(0.53deg, #000000 9%, rgba(0, 0, 0, 0.5) 26.57%, rgba(0, 0, 0, 0) 41.79%);
     z-index: 1;
     transition: height 0.5s ease, opacity 0.5s ease;
 }
@@ -1155,7 +1155,7 @@ a {
 
 .text_block__v3_cards__btn {
     max-width: fit-content;
-    padding: 13px 20px;
+    padding: 12px 20px;
     border-radius: 24px;
 }
 
@@ -3148,17 +3148,20 @@ button[type="submit"]:hover {
     .question_content {
         display: block;
         max-height: 0;
-        
+        opacity: 0;
         overflow: hidden;
         margin: -8px 0 0 0;
         padding: 0 24px;
         border: 1px solid transparent;
-        border-radius: 0 0 24px 24px;
-        transition: max-height 0.8s cubic-bezier(0, 1, 0, 1),
-            opacity 0.8s ease 0.1s,
-            padding 0.8s ease,
-            margin 0.8s ease,
-            border-color 0.8s ease;
+        background-color: transparent;
+        border-radius: 24px;
+        transition: max-height 0.5s ease-in-out,
+            opacity 0.5s ease-in-out,
+            padding 0.5s ease-in-out,
+            margin 0.5s ease-in-out,
+            background-color 0.6s ease-in-out,
+            border-color 0.5s ease-in-out,
+            visibility 0s linear 0.5s;
         visibility: hidden;
     }
 
@@ -3170,21 +3173,26 @@ button[type="submit"]:hover {
         border-color: #2793FF;
         margin: 0 0 8px 0;
         visibility: visible;
-        transition: max-height 0.8s ease-in-out,
-            opacity 0.5s ease,
-            padding 0.5s ease,
-            margin 0.5s ease,
-            border-color 0.5s ease;
+        transition: max-height 0.5s ease-in-out,
+            opacity 0.5s ease-in-out,
+            padding 0.5s ease-in-out,
+            margin 0.5s ease-in-out,
+            border-color 0.5s ease-in-out,
+            background-color 0.5s ease-in-out,
+            visibility 0s linear 0s;
         border-radius: 24px;
     }
 
     .question_content>* {
         transform: translateY(-10px);
-        transition: transform 0.3s ease;
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
     }
 
     .question_content.active>* {
         transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.1s;
     }
 
     .questions_title_title {
@@ -3607,7 +3615,7 @@ button[type="submit"]:hover {
 
     .banner_main__btn {
         gap: 6px;
-        padding: 12px 24px;
+        padding: 14px 24px;
         border-radius: 24px;
     }
 
@@ -3673,6 +3681,7 @@ button[type="submit"]:hover {
         font-size: 16px;
         justify-content: center;
         width: 100%;
+        padding: 14px;
     }
 
     .text_block__v1_subtitle {
@@ -3683,6 +3692,7 @@ button[type="submit"]:hover {
     .text_block__v1__card_content p {
         font-size: 24px;
         max-width: 302px;
+        padding: 8px 8px 0 8px;
     }
 
     .text_block__v1_title {
@@ -3911,7 +3921,7 @@ button[type="submit"]:hover {
     .mobile-filter-bar {
         display: flex;
         align-items: center;
-        padding: 6px;
+        padding: 8px;
         background-color: #fff;
         border-radius: 24px;
         width: 100%;
@@ -3932,7 +3942,7 @@ button[type="submit"]:hover {
     .mobile-filter-active {
         font-family: 'Manrope';
 
-        padding: 11px 35px;
+        padding: 12px 35px;
 
         border-radius: 24px;
         font-size: 14px;
@@ -3960,6 +3970,7 @@ button[type="submit"]:hover {
         line-height: 120%;
         position: absolute;
         right: 24px;
+        top: 1px;
     }
 
     .mobile-filter-toggle svg {
@@ -4172,11 +4183,12 @@ button[type="submit"]:hover {
 
     .text_block__v3__btn {
         font-size: 14px;
-        padding: 10px 24px;
+        padding: 12px 24px;
     }
 
     .text_block__v3_cards__btn {
         font-size: 14px;
+                padding: 14px;
     }
 
     .text_block__v3_top {
@@ -4247,7 +4259,7 @@ button[type="submit"]:hover {
 
     .form_checkbox {
         gap: 6px;
-        bottom: 130px;
+        bottom: 134px;
     }
 
     .form_section__fields {
@@ -4286,11 +4298,12 @@ button[type="submit"]:hover {
         transition: 0.3s;
         white-space: nowrap;
         font-size: 16px;
-        height: 44px;
+        height: 48px;
+        padding: 14px;
     }
 
     .mobile_politic {
-        margin-top: 12px;
+        margin-top: 10px;
     }
 
     /* text_block__v5 */
