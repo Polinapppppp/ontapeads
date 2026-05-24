@@ -216,6 +216,10 @@ body {
     grid-column: span 2;
 }
 
+.span-3 {
+    grid-column: span 3;
+}
+
 .span-4 {
     grid-column: span 4;
 }
@@ -719,7 +723,7 @@ a {
 }
 
 .banner_main--contacts .banner_img {
-    padding-top: 630px;
+    padding-top: 655px;
 }
 
 .banner_main--contacts .banner_img img {
@@ -1155,8 +1159,9 @@ a {
 
 .text_block__v3_cards__btn {
     max-width: fit-content;
-    padding: 12px 20px;
+    padding: 12px 24px;
     border-radius: 24px;
+    font-weight: 500;
 }
 
 /* text_block__v4 */
@@ -1343,6 +1348,48 @@ input[type="checkbox"]:checked {
 .text_block__v5--content {
     gap: 16px;
 }
+
+@media (min-width:768px) {
+    .text_block__v5--content .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+    }
+
+    .text_block__v11--content .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 289px);
+        gap: 16px;
+    }
+
+    .text_block__v5_card_v2.swiper-slide,
+    .text_block__v5_card.swiper-slide{
+        display: flex;
+    }
+
+    .text_block__v11_card.swiper-slide {
+        padding: 24px;
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text_block__v10_adventages .swiper-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 192px);
+        gap: 16px;
+    }
+
+    .text_block__v10_adv_card.swiper-slide{
+        display: flex;
+        height: 192px;
+
+    }
+}
+
 
 .text_block__v5--content_top {
     gap: 16px;
@@ -1932,7 +1979,6 @@ p.questions_text {
 /* text_block__v11 */
 .text_block__v11--content {
     gap: 16px;
-    /* grid-template-rows: repeat(2, 289px); */
 }
 
 .text_block__v11_card {
@@ -2346,7 +2392,7 @@ footer {
 
 .close-popup__form h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 16px;
     text-align: left;
     color: #fff;
@@ -2590,7 +2636,7 @@ button[type="submit"]:hover {
 }
 
 .cookie-modal__link:hover {
-    color: var(--text-light-hover);
+    color: #0080FF;
     transition: 0.5s ease;
 }
 
@@ -2599,16 +2645,17 @@ button[type="submit"]:hover {
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0%;
-    background: rgba(104, 178, 255, 1);
-    border-radius: 16px;
-    padding: 12px;
+    background: #2793FF;
+    border-radius: 24px;
+    padding: 14px;
     color: rgba(255, 255, 255, 1);
     transition: 0.5s ease;
 
 }
 
 .cookie-modal__btn:hover {
-    background: rgba(104, 178, 255, 1);
+    background: rgb(145, 197, 253);
+    ;
     transition: 0.5s ease;
 }
 
@@ -3051,10 +3098,10 @@ button[type="submit"]:hover {
     /* text_block__v5 */
     .text_block__v5--content {
         gap: 10px;
-        flex-direction: row;
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        width: 100vw;
+        position: relative;
+        left: -16px;
+        padding-left: 16px !important;
     }
 
     .text_block__v5--content_top {
@@ -3069,9 +3116,12 @@ button[type="submit"]:hover {
         flex-direction: column;
     }
 
-    .text_block__v5_card {
+    .text_block__v5_card.swiper-slide,
+    .text_block__v5_card_v2.swiper-slide {
         gap: 24px;
         flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .text_block__v5_card_v2 .text_block__v5_card__content {
@@ -3079,8 +3129,10 @@ button[type="submit"]:hover {
         gap: 16px;
     }
 
-    .text_block__v5_card__content p {
+    .text_block__v5_card.swiper-slide .text_block__v5_card__content p,
+    .text_block__v5_card_v2.swiper-slide .text_block__v5_card__content p {
         font-size: 14px;
+        white-space: pre-line;
     }
 
     .text_block__v5_card__content h3 {
@@ -3104,6 +3156,7 @@ button[type="submit"]:hover {
         max-width: 100%;
         overflow-y: hidden;
         height: 100%;
+        gap: 0;
     }
 
     .questions_tab {
@@ -3115,7 +3168,7 @@ button[type="submit"]:hover {
         font-size: 14px;
         padding: 18px 24px;
         color: #00000066;
-
+        margin-bottom: 8px;
     }
 
     .questions_tab p {
@@ -3147,51 +3200,24 @@ button[type="submit"]:hover {
     .question_content {
         display: block;
         max-height: 0;
-        opacity: 0;
         overflow: hidden;
-        margin: -8px 0 0 0;
-        padding: 0 24px;
-        border: 1px solid transparent;
         background-color: transparent;
         border-radius: 24px;
-        transition: max-height 0.5s ease-in-out,
-            opacity 0.5s ease-in-out,
-            padding 0.5s ease-in-out,
-            margin 0.5s ease-in-out,
-            background-color 0.6s ease-in-out,
-            border-color 0.5s ease-in-out,
-            visibility 0s linear 0.5s;
-        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .question_content__text {
+        padding: 24px;
+        margin: 0 0 8px 0;
+        border-radius: 24px;
+        background-color: #FFFFFF;
+        border: 1px solid #2793FF;
+        gap: 54px;
     }
 
     .question_content.active {
         max-height: 800px;
-        opacity: 1;
-        padding: 24px;
-        background-color: #FFFFFF;
-        border-color: #2793FF;
-        margin: 0 0 8px 0;
-        visibility: visible;
-        transition: max-height 0.5s ease-in-out,
-            opacity 0.5s ease-in-out,
-            padding 0.5s ease-in-out,
-            margin 0.5s ease-in-out,
-            border-color 0.5s ease-in-out,
-            background-color 0.5s ease-in-out,
-            visibility 0s linear 0s;
-        border-radius: 24px;
-    }
-
-    .question_content>* {
-        transform: translateY(-10px);
-        opacity: 0;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    .question_content.active>* {
-        transform: translateY(0);
-        opacity: 1;
-        transition-delay: 0.1s;
+        transition: all 0.5s ease-in-out;
     }
 
     .questions_title_title {
@@ -3205,7 +3231,6 @@ button[type="submit"]:hover {
     }
 
     .questions_block__right--bottom {
-        margin-top: 56px;
         justify-content: space-between;
     }
 
@@ -3278,7 +3303,7 @@ button[type="submit"]:hover {
 
 
     .company_card--btn {
-        padding: 12px;
+        padding: 14px;
         font-size: 16px;
     }
 
@@ -3390,38 +3415,44 @@ button[type="submit"]:hover {
 
     .text_block__v10_adventages {
         gap: 12px;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        width: 100vw;
+        position: relative;
+        left: -16px;
+        padding-left: 16px !important;
     }
 
-    .text_block__v10_adv_card {
+    .text_block__v10_adv_card.swiper-slide {
         padding: 24px;
-        max-width: 300px;
         display: flex;
         flex-shrink: 0;
-        height: 192px;
+        height: 160px;
+        white-space: pre-line;
     }
 
     /* text_block__v11 */
     .text_block__v11--content {
-        display: flex;
+
         gap: 10px;
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        width: 100vw;
+        position: relative;
+        left: -16px;
+        padding-left: 16px !important;
     }
 
     .text_block__v11_card__content h3 {
         white-space: pre-line;
     }
 
-    .text_block__v11_card {
+    .text_block__v11_card.swiper-slide {
         gap: 24px;
+        display: flex;
+        flex-direction: column;
         flex-shrink: 0;
-        max-width: 318px;
+        height: 316px;
+    }
+
+    .text_block__v11_card__content p{
+        max-width: 271px;
     }
 
     /* text_block__v12 */
@@ -3492,11 +3523,11 @@ button[type="submit"]:hover {
         padding: 24px 16px 16px 16px;
     }
 
-    .contacts_card__right__bottom h4{
+    .contacts_card__right__bottom h4 {
         padding: 0 8px;
     }
 
-    .contacts_card__right_btm p{
+    .contacts_card__right_btm p {
         padding: 0 8px;
     }
 
@@ -4199,7 +4230,7 @@ button[type="submit"]:hover {
 
     .text_block__v3_cards__btn {
         font-size: 14px;
-                padding: 14px;
+        padding: 14px;
     }
 
     .text_block__v3_top {
@@ -4329,9 +4360,7 @@ button[type="submit"]:hover {
     }
 
     /* text_block__v5 */
-    .text_block__v5_card__img img {
-        max-width: 302px;
-    }
+   
 
     /* text_block__v6 */
     .text_block__v6 .title_content {
@@ -4430,7 +4459,6 @@ button[type="submit"]:hover {
     }
 
     .text_block__v10_adv_card {
-        max-width: 263px;
         height: 160px;
     }
 
@@ -4450,7 +4478,6 @@ button[type="submit"]:hover {
 
     .text_block__v11_card__content p {
         font-size: 14px;
-        max-width: 370px;
     }
 
     /* text_block__v12 */
