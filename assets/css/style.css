@@ -3114,7 +3114,7 @@ button[type="submit"]:hover {
         position: relative;
         z-index: 2;
         font-size: 14px;
-        padding: 18px 24px 18px 16px;
+        padding: 18px 24px;
         color: #00000066;
 
     }
