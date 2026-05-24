@@ -1225,19 +1225,20 @@ a {
 }
 
 .form-bg-image.form2 {
-    right: 125px;
+    right: 153px;
     bottom: 0;
-    top: 15px;
-    width: 636px;
+    top: -20px;
+    width: 458px;
     height: 345px;
 }
 
 .form-bg-image.form1 {
-    right: 60px;
+    right: 82px;
     bottom: 0;
-    top: 15px;
-    width: 619px;
+    top: -19px;
+    width: 478px;
     height: 355px;
+    transform: rotate(-6deg);
 }
 
 
@@ -4108,6 +4109,9 @@ button[type="submit"]:hover {
     }
 
     .filter-sheet__name {
+        display: flex;
+        gap: 16px;
+        align-items: center;
         font-size: 16px;
         font-weight: 500;
         color: #000;
@@ -4284,11 +4288,12 @@ button[type="submit"]:hover {
     }
 
     .form-bg-image.form1 {
-        top: 167px;
+        top: 169px;
     }
 
     .form-bg-image.form1 {
-        left: 46%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-6deg);
     }
 
     .text_block__v4--title p {
