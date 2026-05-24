@@ -1551,7 +1551,7 @@ input[type="checkbox"]:checked {
     font-size: 16px;
     line-height: 120%;
     cursor: pointer;
-    font-weight: 400px;
+    font-weight: 400;
     height: 70px;
     display: flex;
     align-items: center;
@@ -1570,7 +1570,7 @@ input[type="checkbox"]:checked {
 .questions_tab.active {
     background: rgba(39, 147, 255, 1);
     color: rgba(255, 255, 255, 1);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .questions_block__right {
