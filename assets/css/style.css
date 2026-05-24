@@ -1802,9 +1802,8 @@ p.questions_text {
 }
 
 .vacancy__description {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 140%;
-    letter-spacing: 2%;
     margin-bottom: 24px;
     font-weight: 400;
 }
@@ -3358,6 +3357,10 @@ button[type="submit"]:hover {
         padding: 0 8px;
     }
 
+    .vacancy__description {
+        font-size: 14px;
+    }
+
     /* text_block__v9 */
     .text_block__v9--content {
         grid-template-columns: 1fr;
@@ -3486,7 +3489,15 @@ button[type="submit"]:hover {
     }
 
     .contacts_card__right__bottom {
-        padding: 24px;
+        padding: 24px 16px 16px 16px;
+    }
+
+    .contacts_card__right__bottom h4{
+        padding: 0 8px;
+    }
+
+    .contacts_card__right_btm p{
+        padding: 0 8px;
     }
 
     .contacts_card__right_btm {
@@ -3587,8 +3598,8 @@ button[type="submit"]:hover {
     }
 
     .banner_main--cases .banner_img {
-        padding-top: 185px;
-        left: 69%;
+        padding-top: 200px;
+        left: 62%;
     }
 
     .banner_main--cases .banner_img img {
@@ -3657,14 +3668,14 @@ button[type="submit"]:hover {
 
 
     .banner_main--contacts .banner_img {
-        padding-top: 350px !important;
+        padding-top: 370px !important;
 
         left: 80%;
     }
 
     .banner_main--contacts .banner_img img {
         max-height: calc(100% - 320px) !important;
-        transform: scale(1.1) rotate(-30deg);
+        transform: scale(1.05) rotate(-30deg);
 
         mask-image: linear-gradient(26deg, transparent 33%, #ffffff 53%);
         -webkit-mask-image: linear-gradient(26deg, transparent 33%, #ffffff 53%);
@@ -4233,9 +4244,20 @@ button[type="submit"]:hover {
         background-position: center top;
     }
 
-    .form-bg-image.form2,
-    .form-bg-image.form1 {
+    .form-bg-image.form2 {
         width: 350px;
+    }
+
+    .form-bg-image.form1 {
+        width: 311px;
+    }
+
+    .form-bg-image.form1 {
+        top: 167px;
+    }
+
+    .form-bg-image.form1 {
+        left: 46%;
     }
 
     .text_block__v4--title p {
@@ -4465,6 +4487,7 @@ button[type="submit"]:hover {
 
     .footer_policy a {
         white-space: pre-line;
+        padding-top: 7px;
     }
 
     .footer_right {
