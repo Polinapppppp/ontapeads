@@ -1366,7 +1366,7 @@ input[type="checkbox"]:checked {
     }
 
     .text_block__v5_card_v2.swiper-slide,
-    .text_block__v5_card.swiper-slide{
+    .text_block__v5_card.swiper-slide {
         display: flex;
     }
 
@@ -1378,14 +1378,14 @@ input[type="checkbox"]:checked {
         justify-content: space-between;
     }
 
-    .text_block__v10_adventages .swiper-wrapper{
+    .text_block__v10_adventages .swiper-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 192px);
         gap: 16px;
     }
 
-    .text_block__v10_adv_card.swiper-slide{
+    .text_block__v10_adv_card.swiper-slide {
         display: flex;
         height: 192px;
 
@@ -1592,6 +1592,14 @@ input[type="checkbox"]:checked {
     height: 100%;
 }
 
+.question_content__text {
+    height: 100%;
+}
+
+.questions_title {
+    flex: 1;
+}
+
 .questions_title_title {
     font-weight: 500;
     font-size: 24px;
@@ -1620,8 +1628,6 @@ p.questions_text {
     gap: 16px;
     align-items: center;
     margin-top: auto;
-    position: absolute;
-    bottom: 32px;
 }
 
 .questions_block__right--bottom svg {
@@ -1693,7 +1699,7 @@ p.questions_text {
 
 .company_card__text {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 140%;
     margin: 0;
 }
@@ -3455,7 +3461,7 @@ button[type="submit"]:hover {
         height: 300px;
     }
 
-    .text_block__v11_card__content p{
+    .text_block__v11_card__content p {
         max-width: 271px;
     }
 
@@ -4368,7 +4374,7 @@ button[type="submit"]:hover {
     }
 
     /* text_block__v5 */
-   
+
 
     /* text_block__v6 */
     .text_block__v6 .title_content {
@@ -4433,7 +4439,7 @@ button[type="submit"]:hover {
         flex-direction: row !important;
         flex-wrap: wrap;
 
-        gap: 8px;
+        gap: 6px;
     }
 
     .vacacy__skill {
@@ -4442,7 +4448,7 @@ button[type="submit"]:hover {
 
 
     .vacacy__skill p {
-        padding: 4px 12px;
+        padding: 6px 12px;
     }
 
     .vacancy--btn {
