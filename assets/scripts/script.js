@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
+        function scrollToTab(tab) {
+            const rect = tab.getBoundingClientRect();
+            const offset = 120; 
+            const scrollTop = window.pageYOffset + rect.top - offset;
+
+            window.scrollTo({
+                top: scrollTop,
+                behavior: 'smooth'
+            });
+        }
+
         tabs.forEach((tab, index) => {
             tab.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -41,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                     tab.classList.add('active');
                     contents[index].classList.add('active');
+
+                    setTimeout(() => scrollToTab(tab), 400);
                 } else {
                     tabs.forEach((t, i) => {
                         t.classList.toggle('active', i === index);
