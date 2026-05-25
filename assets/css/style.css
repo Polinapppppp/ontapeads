@@ -791,7 +791,7 @@ a {
 .text_block__v1--content .card.span-2 {
     position: relative;
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1556,6 +1556,9 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    width: 341px;           /* ← фиксируем ширину */
+    max-width: 341px;       /* ← и максимальную */
+    box-sizing: border-box; 
 }
 
 .questions_tab:first-child {
@@ -1578,7 +1581,7 @@ input[type="checkbox"]:checked {
     border-radius: 24px;
     padding: 32px;
     position: relative;
-    width: 100%;
+    width: 910px;
     max-height: 464px;
     height: 464px;
 }
@@ -2815,7 +2818,7 @@ button[type="submit"]:hover {
     }
 
     .banner_main--contacts .banner_img {
-        padding-top: 650px;
+        padding-top: 670px;
     }
 
     .banner_main--contacts .banner_img img {
@@ -3179,6 +3182,8 @@ button[type="submit"]:hover {
         padding: 18px 24px;
         color: #00000066;
         margin-bottom: 8px;
+        max-width: none;
+        width: 100%;
     }
 
     .questions_tab p {
@@ -3994,7 +3999,7 @@ button[type="submit"]:hover {
     .mobile-filter-active {
         font-family: 'Manrope';
 
-        padding: 12px 35px;
+        padding: 14px 35px;
 
         border-radius: 24px;
         font-size: 14px;
@@ -4058,7 +4063,7 @@ button[type="submit"]:hover {
         left: 8px;
         background: #fff;
         border-radius: 24px 24px 0 0;
-        padding: 24px;
+        padding: 24px 24px 32px 24px;
         transform: translateY(100%);
         transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
     }
