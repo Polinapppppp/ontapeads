@@ -568,7 +568,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (advSlider) {
             if (window.innerWidth <= 768 && !advSwiper) {
                 advSwiper = new Swiper(advSlider, {
-                    slidesPerView: 1.43,
+                    slidesPerView: 1.3,
                     spaceBetween: 16,
                     loop: true,
                 });

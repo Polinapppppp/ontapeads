@@ -3714,17 +3714,17 @@ button[type="submit"]:hover {
 
 
     .banner_main--contacts .banner_img {
-        padding-top: 370px !important;
-
-        left: 80%;
+          padding-top: 0 !important;    
+        bottom: -145px;                  
+        left: 81%;
     }
 
     .banner_main--contacts .banner_img img {
-        max-height: calc(100% - 320px) !important;
+        max-height: calc(100% - 100px) !important;  
         transform: scale(1.05) rotate(-30deg);
 
-        mask-image: linear-gradient(26deg, transparent 33%, #ffffff 53%);
-        -webkit-mask-image: linear-gradient(26deg, transparent 33%, #ffffff 53%);
+        mask-image: linear-gradient(26deg, transparent 20%, #ffffff 53%);
+        -webkit-mask-image: linear-gradient(26deg, transparent 20%, #ffffff 53%);
     }
 
 
@@ -4500,10 +4500,7 @@ button[type="submit"]:hover {
     }
 
     /* text_block__v12 */
-    .banner_main--contacts .banner_img {
-        padding-top: 100px;
-    }
-
+  
 
     /* footer */
     footer {
