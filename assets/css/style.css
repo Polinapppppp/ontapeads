@@ -2770,6 +2770,14 @@ button[type="submit"]:hover {
         transform: scale(1.3) !important;
     }
 
+     .banner_main--cases .banner_img {
+        padding-top: 290px !important;
+    }
+
+    .banner_main--cases .banner_img img {
+        max-height: calc(100% - 290px) !important;
+    }
+
     .banner_img {
         padding-top: 210px !important;
     }
