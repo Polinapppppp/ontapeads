@@ -1556,9 +1556,11 @@ input[type="checkbox"]:checked {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    width: 341px;           /* ← фиксируем ширину */
-    max-width: 341px;       /* ← и максимальную */
-    box-sizing: border-box; 
+    width: 341px;
+    /* ← фиксируем ширину */
+    max-width: 341px;
+    /* ← и максимальную */
+    box-sizing: border-box;
 }
 
 .questions_tab:first-child {
@@ -2691,6 +2693,9 @@ button[type="submit"]:hover {
     color: #fff;
 }
 
+.production {
+    margin-top: 100px;
+}
 
 .policy_content {
     max-width: 900px;
@@ -2698,6 +2703,7 @@ button[type="submit"]:hover {
     font-size: 16px;
     line-height: 1.4;
     color: var(--text);
+
 }
 
 .policy_content p {
@@ -2818,7 +2824,7 @@ button[type="submit"]:hover {
     }
 
     .banner_main--contacts .banner_img {
-        padding-top: 670px;
+        padding-top: 655px;
     }
 
     .banner_main--contacts .banner_img img {
@@ -2857,6 +2863,10 @@ button[type="submit"]:hover {
 }
 
 @media (max-width:1024px) {
+    .policy_content h3 {
+        font-size: 20px;
+    }
+
     .title {
         font-size: 44px;
     }
@@ -3714,13 +3724,13 @@ button[type="submit"]:hover {
 
 
     .banner_main--contacts .banner_img {
-          padding-top: 0 !important;    
-        bottom: -145px;                  
+        padding-top: 0 !important;
+        bottom: -145px;
         left: 81%;
     }
 
     .banner_main--contacts .banner_img img {
-        max-height: calc(100% - 100px) !important;  
+        max-height: calc(100% - 100px) !important;
         transform: scale(1.05) rotate(-30deg);
 
         mask-image: linear-gradient(26deg, transparent 20%, #ffffff 53%);
@@ -4500,7 +4510,7 @@ button[type="submit"]:hover {
     }
 
     /* text_block__v12 */
-  
+
 
     /* footer */
     footer {
