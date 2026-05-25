@@ -1788,9 +1788,9 @@ p.questions_text {
 }
 
 .text_block__v8_subtitle {
-    font-size: 16px;
+    color: #76A0CA;
+    font-size: 14px;
     line-height: 120%;
-    letter-spacing: 0.02em;
     padding-bottom: 8px;
     font-weight: 500;
 }
@@ -1812,7 +1812,7 @@ p.questions_text {
 .text_block__v8_text {
     font-size: 16px;
     line-height: 140%;
-    font-weight: 500;
+    font-weight: 400;
     white-space: pre-line;
 }
 
@@ -2832,11 +2832,11 @@ button[type="submit"]:hover {
     }
 
     .banner_main--contacts .banner_img {
-        padding-top: 694px;
+        padding-top: 680px;
     }
 
     .banner_main--contacts .banner_img img {
-        max-height: calc(100% - 295px);
+        max-height: calc(100% - 270px);
     }
 
     .banner_main--contacts .banner_img img {
