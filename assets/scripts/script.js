@@ -429,7 +429,6 @@ document.addEventListener('DOMContentLoaded', function () {
             'outstaff': 'Аутстафф'
         };
 
-        // === FLIP-анимация подложки ===
         function moveBgToTab(tab, animate = true) {
             if (!filterBg || !tab) return;
 
@@ -440,11 +439,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetW = tabRect.width;
 
             if (!animate) {
-                // Без анимации — мгновенное позиционирование
                 filterBg.style.transition = 'none';
                 filterBg.style.transform = `translateX(${targetX}px)`;
                 filterBg.style.width = `${targetW}px`;
-                // Форсируем reflow
                 filterBg.offsetHeight;
                 filterBg.style.transition = '';
             } else {
@@ -453,15 +450,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // === Инициализация: ждём готовности шрифтов и layout ===
         function initFilterBg() {
             const activeTab = servicesSection.querySelector('.filter_tab.active');
             if (!activeTab || !filterBg) return;
 
-            // Сначала позиционируем без анимации и без видимости
             moveBgToTab(activeTab, false);
 
-            // Два RAF чтобы гарантировать, что браузер успел всё отрисовать
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     filterBg.classList.add('is-ready');
@@ -469,17 +463,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        // Запускаем инициализацию
         if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(initFilterBg);
         } else {
-            // Fallback для старых браузеров
             window.addEventListener('load', initFilterBg);
-            // + запасной вариант через таймаут
             setTimeout(initFilterBg, 100);
         }
 
-        // Обновление при ресайзе — тоже без анимации, чтобы не было «плавания»
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
@@ -544,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 t.classList.remove('active');
                 if (t.dataset.filter === filterValue) {
                     t.classList.add('active');
-                    moveBgToTab(t, true); // ← с анимацией
+                    moveBgToTab(t, true); 
                 }
             });
 
