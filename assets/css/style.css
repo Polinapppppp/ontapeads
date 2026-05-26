@@ -323,7 +323,8 @@ a {
 }
 
 .main--btn:hover {
-    background: rgb(145, 197, 253);
+    background: #fff;
+     color: rgba(39, 147, 255, 1);
     transition: 0.5s ease;
 
 }
@@ -647,7 +648,7 @@ a {
     letter-spacing: -2%;
     text-align: center;
     white-space: nowrap;
-    width: 970px;
+    width: 1015px;
 }
 
 
@@ -2274,6 +2275,13 @@ p.contact_group__left_tel {
     font-weight: 500;
     padding: 12px 32px;
     margin-top: 42px;
+    transition: 0.5s ease;
+}
+
+.contacts_card--btm:hover{
+    background: var(--background) !important;
+    transition: 0.5s ease;
+
 }
 
 /* footer */
@@ -3751,7 +3759,7 @@ button[type="submit"]:hover {
         border-radius: 16px;
         font-size: 24px;
         white-space: normal;
-        max-width: 339px;
+        max-width: 355px;
         line-height: 120%;
     }
 
@@ -3810,8 +3818,8 @@ button[type="submit"]:hover {
         max-height: calc(100% - 100px) !important;
         transform: scale(1.05) rotate(-30deg);
 
-        mask-image: linear-gradient(26deg, transparent 20%, #ffffff 53%);
-        -webkit-mask-image: linear-gradient(26deg, transparent 20%, #ffffff 53%);
+        mask-image: linear-gradient(26deg, transparent 20%, #ffffff 30%);
+        -webkit-mask-image: linear-gradient(26deg, transparent 20%, #ffffff 30%);
     }
 
 
