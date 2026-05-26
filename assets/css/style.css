@@ -3029,6 +3029,7 @@ button[type="submit"]:hover {
 
     .banner-span {
         font-size: 50px;
+        max-width: 750px;
     }
 
     .banner_main--company .banner-span,
@@ -3054,7 +3055,7 @@ button[type="submit"]:hover {
 
 
     .banner_main--services .banner-span {
-        max-width: 332px;
+        max-width: 350px;
     }
 
     /* text_block__v1 */
