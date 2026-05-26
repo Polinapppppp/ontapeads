@@ -409,10 +409,11 @@ document.addEventListener('DOMContentLoaded', function () {
         startRotator();
     }
 
-    const servicesSection = document.querySelector('.text_block__v2');
+       const servicesSection = document.querySelector('.text_block__v2');
     if (servicesSection) {
         const filterTabs = servicesSection.querySelectorAll('.filter_tab');
         const cardsContainers = servicesSection.querySelectorAll('.text_block__v2__cards');
+        const filterBg = servicesSection.querySelector('.filter_tab-bg');
 
         const mobileFilterActive = document.getElementById('mobileFilterActive');
         const mobileFilterToggle = document.getElementById('mobileFilterToggle');
@@ -427,6 +428,66 @@ document.addEventListener('DOMContentLoaded', function () {
             'strategies': 'Стратегии',
             'outstaff': 'Аутстафф'
         };
+
+        // === FLIP-анимация подложки ===
+        function moveBgToTab(tab, animate = true) {
+            if (!filterBg || !tab) return;
+
+            const containerRect = tab.parentElement.getBoundingClientRect();
+            const tabRect = tab.getBoundingClientRect();
+
+            const targetX = tabRect.left - containerRect.left;
+            const targetW = tabRect.width;
+
+            if (!animate) {
+                // Без анимации — мгновенное позиционирование
+                filterBg.style.transition = 'none';
+                filterBg.style.transform = `translateX(${targetX}px)`;
+                filterBg.style.width = `${targetW}px`;
+                // Форсируем reflow
+                filterBg.offsetHeight;
+                filterBg.style.transition = '';
+            } else {
+                filterBg.style.transform = `translateX(${targetX}px)`;
+                filterBg.style.width = `${targetW}px`;
+            }
+        }
+
+        // === Инициализация: ждём готовности шрифтов и layout ===
+        function initFilterBg() {
+            const activeTab = servicesSection.querySelector('.filter_tab.active');
+            if (!activeTab || !filterBg) return;
+
+            // Сначала позиционируем без анимации и без видимости
+            moveBgToTab(activeTab, false);
+
+            // Два RAF чтобы гарантировать, что браузер успел всё отрисовать
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    filterBg.classList.add('is-ready');
+                });
+            });
+        }
+
+        // Запускаем инициализацию
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(initFilterBg);
+        } else {
+            // Fallback для старых браузеров
+            window.addEventListener('load', initFilterBg);
+            // + запасной вариант через таймаут
+            setTimeout(initFilterBg, 100);
+        }
+
+        // Обновление при ресайзе — тоже без анимации, чтобы не было «плавания»
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                const activeTab = servicesSection.querySelector('.filter_tab.active');
+                if (activeTab) moveBgToTab(activeTab, false);
+            }, 150);
+        });
 
         filterTabs.forEach((tab) => {
             tab.addEventListener('click', function (e) {
@@ -483,6 +544,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 t.classList.remove('active');
                 if (t.dataset.filter === filterValue) {
                     t.classList.add('active');
+                    moveBgToTab(t, true); // ← с анимацией
                 }
             });
 
@@ -495,7 +557,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             if (filterValue === 'all') {
-                cardsContainers.forEach(container => container.classList.add('active'));
+                cardsContainers.forEach((container, index) => {
+                    if (index === 0) {
+                        container.classList.add('active');
+                    } else {
+                        container.classList.remove('active');
+                    }
+                });
             } else {
                 cardsContainers.forEach(container => container.classList.remove('active'));
                 const targetContainer = document.getElementById(filterValue);
@@ -532,7 +600,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-     initSliders();
+    initSliders();
 
     window.addEventListener('resize', initSliders);
 
